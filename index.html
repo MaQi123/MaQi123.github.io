@@ -112,61 +112,6 @@ var _hmt = _hmt || [];
 
   
     
-    <h3 class="article-title"><a href="/2018/12/07/test/"><span></span></a></h3>
-    
-  
-
-  <div class="article-top-meta">
-    <span class="posted-on">
-      <a href="/2018/12/07/test/" rel="bookmark">
-        <time class="entry-date published" datetime="2018-12-07T08:28:01.692Z">
-          2018-12-07
-        </time>
-      </a>
-    </span>
-    <br>
-    
-  </div>
-
-
-  
-
-  <div class="article-content">
-    <div class="entry">
-      
-          <p>111111111<br>222222222222<br>3333333</p>
-
-      
-    </div>
-    
-  </div>
-
-  <div class="article-footer">
-    <div class="article-meta pull-left">
-
-    
-
-    
-
-    </div>
-
-    
-  </div>
-  
-    
-    <h3 class="article-read"><a href="/2018/12/07/test/"><span>more</span></a></h3>
-    
-  
-</article>
-
-
-
-
-
-  <article class="article-container ">
-
-  
-    
     <h3 class="article-title"><a href="/2017/02/03/SSH/"><span>SSH</span></a></h3>
     
   
@@ -189,7 +134,8 @@ var _hmt = _hmt || [];
   <div class="article-content">
     <div class="entry">
       
-          <p>Hibernate<br>1.Hibernate优点：<br>1）对象/关系数据库映射(Basic O/R Mapping)<br>它使用时只需要操纵对象，使开发更对象化，抛弃了数据库中心的思想，完全的面向对象思想。<br>2）透明持久化(Persistent)<br>带有持久化状态的、具有业务功能的单线程对象，此对象生存期很短。这些对象可能是普通的JavaBeans/POJO，这个对象没有实现第三方框架或者接口，唯一特殊的是他们正与（仅仅一个）Session相关联。一旦这个Session被关闭，这些对象就会脱离持久化状态，这样就可被应用程序的任何层自由使用。（例如，用作跟表示层打交道的数据传输对象。）<br>3）事务Transaction (org.Hibernate.Transaction)<br>应用程序用来指定原子操作单元范围的对象，它是单线程的，生命周期很短。它通过抽象将应用从底层具体的JDBC、JTA以及CORBA事务隔离开。某些情况下，一个Session之内可能包含多个Transaction对象。尽管是否使用该对象是可选的，但无论是使用底层的API还是使用Transaction对象，事务边界的开启与关闭是必不可少的。<br>　　（4）它没有侵入性，即所谓的轻量级框架。<br>　　（5）移植性会很好。<br>　　（6）缓存机制。提供一级缓存和二级缓存。<br>　　（7）简洁的HQL编程。<br>2.Hibernate缺点：<br>1）Hibernate在批量数据处理的时候是有弱势。</p>
+          <a id="more"></a>
+<p>Hibernate<br>1.Hibernate优点：<br>1）对象/关系数据库映射(Basic O/R Mapping)<br>它使用时只需要操纵对象，使开发更对象化，抛弃了数据库中心的思想，完全的面向对象思想。<br>2）透明持久化(Persistent)<br>带有持久化状态的、具有业务功能的单线程对象，此对象生存期很短。这些对象可能是普通的JavaBeans/POJO，这个对象没有实现第三方框架或者接口，唯一特殊的是他们正与（仅仅一个）Session相关联。一旦这个Session被关闭，这些对象就会脱离持久化状态，这样就可被应用程序的任何层自由使用。（例如，用作跟表示层打交道的数据传输对象。）<br>3）事务Transaction (org.Hibernate.Transaction)<br>应用程序用来指定原子操作单元范围的对象，它是单线程的，生命周期很短。它通过抽象将应用从底层具体的JDBC、JTA以及CORBA事务隔离开。某些情况下，一个Session之内可能包含多个Transaction对象。尽管是否使用该对象是可选的，但无论是使用底层的API还是使用Transaction对象，事务边界的开启与关闭是必不可少的。<br>　　（4）它没有侵入性，即所谓的轻量级框架。<br>　　（5）移植性会很好。<br>　　（6）缓存机制。提供一级缓存和二级缓存。<br>　　（7）简洁的HQL编程。<br>2.Hibernate缺点：<br>1）Hibernate在批量数据处理的时候是有弱势。</p>
 <h2 id="2）针对某一对象-单个对象-简单的查-改-删-增，不是批量修改、删除，适合用Hibernate；而对于批量修改、删除，不适合用Hibernate，这也是OR框架的弱点-要使用数据库的特定优化机制的时候，不适合用Hibernate。"><a href="#2）针对某一对象-单个对象-简单的查-改-删-增，不是批量修改、删除，适合用Hibernate；而对于批量修改、删除，不适合用Hibernate，这也是OR框架的弱点-要使用数据库的特定优化机制的时候，不适合用Hibernate。" class="headerlink" title="2）针对某一对象(单个对象)简单的查\改\删\增，不是批量修改、删除，适合用Hibernate；而对于批量修改、删除，不适合用Hibernate，这也是OR框架的弱点;要使用数据库的特定优化机制的时候，不适合用Hibernate。"></a>2）针对某一对象(单个对象)简单的查\改\删\增，不是批量修改、删除，适合用Hibernate；而对于批量修改、删除，不适合用Hibernate，这也是OR框架的弱点;要使用数据库的特定优化机制的时候，不适合用Hibernate。</h2><p>Hibernate与Mybatis的区别<br>相同点：<br>1）Hibernate与MyBatis都是通过SessionFactoryBuider由XML配置文件生成SessionFactory，由SessionFactory 生成Session，由Session来开启执行事务和SQL语句。<br>2）Hibernate和MyBatis都支持JDBC和事务处理。<br>3）基于ORM思想解决了entity和数据库的映射问题<br>不同点：<br>1）sql方面：mybaits通过mapper.xml维护映射结果，程序员手动编写sql相比hibernate自动生成hql（hibernate sql）更加灵活，hibernate的hql数据库移植性更好，体现在强壮性。hibernate在级联删除的时候效率低；数据量大， 表多的时候，基于关系操作会变得复杂。</p>
 <h2 id="2）缓存方面：mybatis和hibernate都可以使用第三方缓存，而hibernate相比maybatis有更好的二级缓存机制。"><a href="#2）缓存方面：mybatis和hibernate都可以使用第三方缓存，而hibernate相比maybatis有更好的二级缓存机制。" class="headerlink" title="2）缓存方面：mybatis和hibernate都可以使用第三方缓存，而hibernate相比maybatis有更好的二级缓存机制。"></a>2）缓存方面：mybatis和hibernate都可以使用第三方缓存，而hibernate相比maybatis有更好的二级缓存机制。</h2><p>Hibernate环境搭建<br>1、部署jar文件<br>2、创建Hibernate配置文件hibernate.cfg.xml</p>
 <p>3、创建持久化类和映射文件（映射文件名与持久类同名以“.hbm.xml”为后缀）</p>
@@ -259,7 +205,8 @@ var _hmt = _hmt || [];
   <div class="article-content">
     <div class="entry">
       
-          <p>数据库基本概念：实体和记录<br>实体：所有客观存在的，可以被描述的事物。<br>记录 ：每一行对应一个实体，在数据库中，通常叫做一条记录<br>数据冗余：数据重复的现象<br>数据完整性：数据库中数据的准确性。</p>
+          <a id="more"></a>
+<p>数据库基本概念：实体和记录<br>实体：所有客观存在的，可以被描述的事物。<br>记录 ：每一行对应一个实体，在数据库中，通常叫做一条记录<br>数据冗余：数据重复的现象<br>数据完整性：数据库中数据的准确性。</p>
 <p>新建一个数据库：<br>1.在ssms中的菜单栏中选择“文件”——“连接对象资源管理器”选项，弹出“连接服务器对话框”。<br>2.在服务器名称 下拉列表框中选择连接过的服务器。也可以选择 浏览更多 选项来选择其他的服务器。<br>3需要身份验证： Windows身份验证 SQL Server身份验证。</p>
 <p>新建数据库登录名：<br>1.在安全性节点下，点击登录名，在弹出的快捷菜单中选择 新建登录名 选项<br>2.在新建登录对话框中数据登录名，密码，并指定其默认的数据库。<br>3.有了登录名，还需要赋予该登录名操作权限，否则它将只能连接到服务器，而没有任何操作权限。</p>
 <p>新建数据库用户：<br>1.在指定数据库安全性节点下，右击用户，在弹出的快捷菜单中选择“新建用户”选项。<br>2.在新建对话框中输入用户的名称，选择关联得到登录名，<br>有了用户名和关联登录名之后 还需要赋予用户对该数据库的操作权限。</p>
@@ -396,7 +343,8 @@ var _hmt = _hmt || [];
   <div class="article-content">
     <div class="entry">
       
-          <p>什么是JDK：<br>JDK全称(java Development kit)java 工具开发包就是是能够实行编译和运行的功能  </p>
+          <a id="more"></a>
+<p>什么是JDK：<br>JDK全称(java Development kit)java 工具开发包就是是能够实行编译和运行的功能  </p>
 <hr>
 <p>jdk中的重要文件：</p>
 <p>Jvm：java virtual machine(java虚拟机)java程序就在JVM中运行的<br>java核心类库：已经编写好的java类</p>
