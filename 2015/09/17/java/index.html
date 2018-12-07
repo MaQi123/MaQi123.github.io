@@ -1,152 +1,195 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
-  <title>JAVA | Hexo</title>
-
-  
-  <meta name="author" content="John Doe">
-  
-
-  
-  <meta name="description" content="什么是JDK：JDK全称(java Development kit)java 工具开发包就是是能够实行编译和运行的功能  
-
-jdk中的重要文件：
-Jvm：java virtual machine(java虚拟机)java程序就在JVM中运行的java核心类库：已经编写好的java类
-
-如何配置环境">
-  
-
+  <title>java | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   
-  <meta name="keywords" content="">
-  
-
-  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-
-  <meta property="og:title" content="JAVA">
-
-  <meta property="og:site_name" content="Hexo">
-
-  
-  <meta property="og:image" content="/favicon.ico">
   
   
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-5005349780815724",
-    enable_page_level_ads: true
-  });
-</script>
+  <meta name="description" content="什么是JDK：JDK全称(java Development kit)java 工具开发包就是是能够实行编译和运行的功能    jdk中的重要文件： Jvm：java virtual machine(java虚拟机)java程序就在JVM中运行的java核心类库：已经编写好的java类  如何配置环境变量： 计算机—属性—高级系统设置—环境变量。在新的打开界面中的系统变量需要设置三个属性 1.“J">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JAVA">
+<meta property="og:url" content="http://yoursite.com/2015/09/17/java/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="什么是JDK：JDK全称(java Development kit)java 工具开发包就是是能够实行编译和运行的功能    jdk中的重要文件： Jvm：java virtual machine(java虚拟机)java程序就在JVM中运行的java核心类库：已经编写好的java类  如何配置环境变量： 计算机—属性—高级系统设置—环境变量。在新的打开界面中的系统变量需要设置三个属性 1.“J">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-12-07T08:50:29.862Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="JAVA">
+<meta name="twitter:description" content="什么是JDK：JDK全称(java Development kit)java 工具开发包就是是能够实行编译和运行的功能    jdk中的重要文件： Jvm：java virtual machine(java虚拟机)java程序就在JVM中运行的java核心类库：已经编写好的java类  如何配置环境变量： 计算机—属性—高级系统设置—环境变量。在新的打开界面中的系统变量需要设置三个属性 1.“J">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
 
   
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?223eea22355699157e147870eb124b24";
-  var s = document.getElementsByTagName("script")[0];
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
 
+  <link rel="icon" href="/css/images/mylogo.jpg">
+  <link rel="apple-touch-icon" href="/css/images/mylogo.jpg">
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <style type="text/css">
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
+  <link rel="stylesheet" href="/css/style.css">
 
-  <link rel="manifest" href="/manifest.json">
-  <link href="/favicon.ico" rel="icon">
+  <script src="/js/jquery-3.1.1.min.js"></script>
+  <script src="/js/bootstrap.js"></script>
 
-  <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="/css/base/bootstrap.min.css" media="screen" type="text/css">
-  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.css">
 
+  
+    <link rel="stylesheet" href="/css/dialog.css">
+  
+
+  
+
+  
+    <link rel="stylesheet" href="/css/header-post.css">
+  
+
+  
+  
+  
+    <link rel="stylesheet" href="/css/vdonate.css">
+  
 
 </head>
+</html>
 
 
-<body>
-<div class="blog">
-  <div class="content">
-
-    
-
-    <header class="header-container" style="background-image: url('/images/blog-bg.jpg');">
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
 
 
-<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
-    <div class="container-fluid">
-        <div class="navbar-header page-scroll">
-          <button type="button" id="tglBtn" class="navbar-toggle">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="/">John Doe</a>
+  
+  <div id="container">
+    <div id="wrap">
+      
+        <header>
+
+    <div id="allheader" class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="navbar-inner">
+          
+          <div class="container"> 
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+            
+              <a class="brand" style="
+                 margin-top: 0px;" href="#" data-toggle="modal" data-target="#myModal">
+                  <img width="124px" height="124px" alt="Hike News" src="/css/images/mylogo.jpg">
+              </a>
+            
+            
+            <div class="navbar-collapse collapse">
+              <ul class="hnav navbar-nav">
+                
+                  <li> <a class="main-nav-link" href="/">Home</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/archives">Archives</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/categories">Categories</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/tags">Tags</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/about">About</a> </li>
+                
+                  <li><div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="">
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something...">
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
         </div>
-        <div id="bosenyblog-navbar">
-          <div class="navbar-collapse" id="bs-example-navbar-collapse-6">
-            <ul class="nav navbar-nav navbar-right">
-            
-              <li><a href="/">Home</a></li>
-            
-              <li><a href="/archives">Archives</a></li>
-            
-              <li><a href="/about">About</a></li>
-            
-              <li><a href="/tags">Tags</a></li>
-            
-            </ul>
-          </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
         </div>
-
     </div>
- </nav>
- <div class="gotop-btn">
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
 
- </div>
+</div></li>
+            </ul></div>
+          </div>
+                
+      </div>
+    </div>
+
 </header>
 
-        
-          <div class="container ">
-          <div class="row">
-            <main class="site-main posts-loop col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1
-                post-container" style="position: inherit;">
-            <article class="article-container ">
-
-  
-    
-    <h3 class="article-title"><span>JAVA</span></h3>
-    
-  
-
-  <div class="article-top-meta">
-    <span class="posted-on">
-      <a href="/2015/09/17/java/" rel="bookmark">
-        <time class="entry-date published" datetime="2015-09-17T03:12:19.000Z">
-          2015-09-17
-        </time>
-      </a>
-    </span>
-    <br>
-    
-    <span id="busuanzi_container_page_pv">
-      本文总阅读量<span id="busuanzi_value_page_pv"></span>次
-    </span>
-    
-  </div>
 
 
-  
-
-  <div class="article-content">
-    <div class="entry">
       
-          <a id="more"></a>
+            
+      <div id="content" class="outer">
+        
+          <section id="main" style="float:none;"><article id="post-java" style="width: 75%; float:left;" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      JAVA
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2015/09/17/java/" class="article-date">
+	  <time datetime="2015-09-17T03:12:19.000Z" itemprop="datePublished">2015-09-17</time>
+	</a>
+
+      
+      
+	<a class="article-views">
+	<span id="busuanzi_container_page_pv">
+		PV:<span id="busuanzi_value_page_pv"></span>
+	</span>
+	</a>
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <a id="more"></a>
 <p>什么是JDK：<br>JDK全称(java Development kit)java 工具开发包就是是能够实行编译和运行的功能  </p>
 <hr>
 <p>jdk中的重要文件：</p>
@@ -317,156 +360,284 @@ var _hmt = _hmt || [];
 
       
     </div>
-    
-  </div>
+    <footer class="article-footer">
+      
+        <div id="donation_div"></div>
 
-  <div class="article-footer">
-    <div class="article-meta pull-left">
+<script src="/js/vdonate.js"></script>
+<script>
+var a = new Donate({
+  title: '如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作!', // 可选参数，打赏标题
+  btnText: 'Donate', // 可选参数，打赏按钮文字
+  el: document.getElementById('donation_div'),
+  wechatImage: 'https://raw.githubusercontent.com/iTimeTraveler/iTimeTraveler.github.io/site/source/about/donate/images/WeChanQR.png',
+  alipayImage: 'https://raw.githubusercontent.com/iTimeTraveler/iTimeTraveler.github.io/site/source/about/donate/images/AliPayQR.jpg'
+});
+</script>
+      
+      
+      <div>
+        <ul class="post-copyright">
+          <li class="post-copyright-author">
+          <strong>Post author:  </strong>John Doe
+          </li>
+          <li class="post-copyright-link">
+          <strong>Post link:  </strong>
+          <a href="/2015/09/17/java/" target="_blank" title="JAVA">http://yoursite.com/2015/09/17/java/</a>
+          </li>
+          <li class="post-copyright-license">
+            <strong>Copyright Notice:   </strong>
+            All articles in this blog are licensed under <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">CC BY-NC-ND 4.0</a>
+            unless stating additionally.
+          </li>
+         
+        </ul>
+<div>
+</div></div>
+      
+      
+        
+	<div id="comment">
+		<!-- 来必力City版安装代码 -->
+		<div id="lv-container" data-id="city" data-uid="MTAyMC8yOTQ4MS82MDQ5">
+		<script type="text/javascript">
+		   (function(d, s) {
+		       var j, e = d.getElementsByTagName(s)[0];
 
-    
+		       if (typeof LivereTower === 'function') { return; }
 
-    
+		       j = d.createElement(s);
+		       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+		       j.async = true;
 
-    </div>
+		       e.parentNode.insertBefore(j, e);
+		   })(document, 'script');
+		</script>
+		<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+		</div>
+		<!-- City版安装代码已完成 -->
+	</div>
 
-    
+
+
+      
+      
+
+    </footer>
   </div>
   
     
-    
+<nav id="article-nav">
+  
+    <a href="/2016/11/15/SqlServer/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          SQL Server
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
   
 </article>
-   
-    <div id="toc" class="toc-article ">
-    <div class="toc-title">目录</div>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Window—-Preferences—-Java—-Installed-JREs—-Add—Next-gt-—-Directory—-选择java文件下的JDK1-7—确认—-Finish—-选择添加的路径—-OK"><span class="toc-number">1.</span> <span class="toc-text">Window—-Preferences—-Java—-Installed JREs—-Add—Next&gt;—-Directory—-选择java文件下的JDK1.7—确认—-Finish—-选择添加的路径—-OK</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#split-拆分字符串"><span class="toc-number">2.</span> <span class="toc-text">split()            //拆分字符串</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#switch中的条件只能是（byte-short-int-char-String）"><span class="toc-number">3.</span> <span class="toc-text">switch中的条件只能是（byte,short,int,char,String）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#常量名全部大写单词中间用“-”分割"><span class="toc-number">4.</span> <span class="toc-text">常量名全部大写单词中间用“_”分割</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#this-表示当前类的无惨构造方法，自能在构造方法中使用，而且必须时第一行"><span class="toc-number">5.</span> <span class="toc-text">this()表示当前类的无惨构造方法，自能在构造方法中使用，而且必须时第一行</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#重载的目的：提高代码的可读性，复用性"><span class="toc-number">6.</span> <span class="toc-text">重载的目的：提高代码的可读性，复用性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#改变其中一个数组的值另一个数组改变（指向同一个存储空间所以共用的是一个数组）"><span class="toc-number">7.</span> <span class="toc-text">改变其中一个数组的值另一个数组改变（指向同一个存储空间所以共用的是一个数组）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">8.</span> <span class="toc-text">} </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1、修改属性为Private→2、创建公有的getter-setter方法→3、对属性值的合法性进行判断"><span class="toc-number">9.</span> <span class="toc-text">1、修改属性为Private→2、创建公有的getter/setter方法→3、对属性值的合法性进行判断</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7、普通类是不允许声明为静态的，只有内部类才可以。"><span class="toc-number">10.</span> <span class="toc-text">7、普通类是不允许声明为静态的，只有内部类才可以。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#重点：静态方法先被加载，普通方法调用的时候才加载"><span class="toc-number">11.</span> <span class="toc-text">重点：静态方法先被加载，普通方法调用的时候才加载</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Object类的六个方法：1、equals（），2、getClass-，3、hashCode-，4、notify-5、notifyAll-，6、toString"><span class="toc-number">12.</span> <span class="toc-text">Object类的六个方法：1、equals（），2、getClass()，3、hashCode()，4、notify(),5、notifyAll()，6、toString()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3、super出现在子类的方法和构造方法中，而不是其他地方"><span class="toc-number">13.</span> <span class="toc-text">3、super出现在子类的方法和构造方法中，而不是其他地方</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8、抽象类中的构造方法可以正常使用"><span class="toc-number">14.</span> <span class="toc-text">8、抽象类中的构造方法可以正常使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2、方法重写不能缩小被重写方法的访问权限"><span class="toc-number">15.</span> <span class="toc-text">2、方法重写不能缩小被重写方法的访问权限</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7、final可以用来修饰类，属性，方法，不能修饰构造函数"><span class="toc-number">16.</span> <span class="toc-text">7、final可以用来修饰类，属性，方法，不能修饰构造函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#向下转型——父类转换为子类（结合instanceof强制转换）"><span class="toc-number">17.</span> <span class="toc-text">向下转型——父类转换为子类（结合instanceof强制转换）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2、不能和private，static和final共存"><span class="toc-number">18.</span> <span class="toc-text">2、不能和private，static和final共存</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#throws：声明方法可能抛出的各种异常"><span class="toc-number">19.</span> <span class="toc-text">throws：声明方法可能抛出的各种异常</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#e-printStackTrace"><span class="toc-number">20.</span> <span class="toc-text">e.printStackTrace()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#InputMismatchException-赋值错误内容不匹配"><span class="toc-number">21.</span> <span class="toc-text"> | InputMismatchException                       |   赋值错误内容不匹配                    |    </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#System-err-println-“”-也是输出语句-只不过输出的字体是红色的"><span class="toc-number">22.</span> <span class="toc-text">System.err.println(“”),也是输出语句.只不过输出的字体是红色的</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3、内容不同：throw抛出一个异常对象，而且只能是一个；throws后面跟异常类，而且可以跟多个异常类"><span class="toc-number">23.</span> <span class="toc-text">3、内容不同：throw抛出一个异常对象，而且只能是一个；throws后面跟异常类，而且可以跟多个异常类</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3、当一个线程访问一个synchronized-this-同步代码块时，其他线程可以访问该资源的非synchronized-this-同步代码"><span class="toc-number">24.</span> <span class="toc-text">3、当一个线程访问一个synchronized(this)同步代码块时，其他线程可以访问该资源的非synchronized(this)同步代码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#字符流：输入流Reader基类，输出流Writer基类"><span class="toc-number">25.</span> <span class="toc-text">字符流：输入流Reader基类，输出流Writer基类</span></a></li></ol>
-</div>
 
+<!-- Table of Contents -->
 
+  <aside id="toc-sidebar">
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">Contents</strong>
+    
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Window—-Preferences—-Java—-Installed-JREs—-Add—Next-gt-—-Directory—-选择java文件下的JDK1-7—确认—-Finish—-选择添加的路径—-OK"><span class="nav-number">1.</span> <span class="nav-text">Window—-Preferences—-Java—-Installed JREs—-Add—Next&gt;—-Directory—-选择java文件下的JDK1.7—确认—-Finish—-选择添加的路径—-OK</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#split-拆分字符串"><span class="nav-number">2.</span> <span class="nav-text">split()            //拆分字符串</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#switch中的条件只能是（byte-short-int-char-String）"><span class="nav-number">3.</span> <span class="nav-text">switch中的条件只能是（byte,short,int,char,String）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常量名全部大写单词中间用“-”分割"><span class="nav-number">4.</span> <span class="nav-text">常量名全部大写单词中间用“_”分割</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#this-表示当前类的无惨构造方法，自能在构造方法中使用，而且必须时第一行"><span class="nav-number">5.</span> <span class="nav-text">this()表示当前类的无惨构造方法，自能在构造方法中使用，而且必须时第一行</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#重载的目的：提高代码的可读性，复用性"><span class="nav-number">6.</span> <span class="nav-text">重载的目的：提高代码的可读性，复用性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#改变其中一个数组的值另一个数组改变（指向同一个存储空间所以共用的是一个数组）"><span class="nav-number">7.</span> <span class="nav-text">改变其中一个数组的值另一个数组改变（指向同一个存储空间所以共用的是一个数组）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#"><span class="nav-number">8.</span> <span class="nav-text">} </span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1、修改属性为Private→2、创建公有的getter-setter方法→3、对属性值的合法性进行判断"><span class="nav-number">9.</span> <span class="nav-text">1、修改属性为Private→2、创建公有的getter/setter方法→3、对属性值的合法性进行判断</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7、普通类是不允许声明为静态的，只有内部类才可以。"><span class="nav-number">10.</span> <span class="nav-text">7、普通类是不允许声明为静态的，只有内部类才可以。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#重点：静态方法先被加载，普通方法调用的时候才加载"><span class="nav-number">11.</span> <span class="nav-text">重点：静态方法先被加载，普通方法调用的时候才加载</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Object类的六个方法：1、equals（），2、getClass-，3、hashCode-，4、notify-5、notifyAll-，6、toString"><span class="nav-number">12.</span> <span class="nav-text">Object类的六个方法：1、equals（），2、getClass()，3、hashCode()，4、notify(),5、notifyAll()，6、toString()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3、super出现在子类的方法和构造方法中，而不是其他地方"><span class="nav-number">13.</span> <span class="nav-text">3、super出现在子类的方法和构造方法中，而不是其他地方</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8、抽象类中的构造方法可以正常使用"><span class="nav-number">14.</span> <span class="nav-text">8、抽象类中的构造方法可以正常使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2、方法重写不能缩小被重写方法的访问权限"><span class="nav-number">15.</span> <span class="nav-text">2、方法重写不能缩小被重写方法的访问权限</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7、final可以用来修饰类，属性，方法，不能修饰构造函数"><span class="nav-number">16.</span> <span class="nav-text">7、final可以用来修饰类，属性，方法，不能修饰构造函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#向下转型——父类转换为子类（结合instanceof强制转换）"><span class="nav-number">17.</span> <span class="nav-text">向下转型——父类转换为子类（结合instanceof强制转换）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2、不能和private，static和final共存"><span class="nav-number">18.</span> <span class="nav-text">2、不能和private，static和final共存</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#throws：声明方法可能抛出的各种异常"><span class="nav-number">19.</span> <span class="nav-text">throws：声明方法可能抛出的各种异常</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#e-printStackTrace"><span class="nav-number">20.</span> <span class="nav-text">e.printStackTrace()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#InputMismatchException-赋值错误内容不匹配"><span class="nav-number">21.</span> <span class="nav-text"> | InputMismatchException                       |   赋值错误内容不匹配                    |    </span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#System-err-println-“”-也是输出语句-只不过输出的字体是红色的"><span class="nav-number">22.</span> <span class="nav-text">System.err.println(“”),也是输出语句.只不过输出的字体是红色的</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3、内容不同：throw抛出一个异常对象，而且只能是一个；throws后面跟异常类，而且可以跟多个异常类"><span class="nav-number">23.</span> <span class="nav-text">3、内容不同：throw抛出一个异常对象，而且只能是一个；throws后面跟异常类，而且可以跟多个异常类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3、当一个线程访问一个synchronized-this-同步代码块时，其他线程可以访问该资源的非synchronized-this-同步代码"><span class="nav-number">24.</span> <span class="nav-text">3、当一个线程访问一个synchronized(this)同步代码块时，其他线程可以访问该资源的非synchronized(this)同步代码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#字符流：输入流Reader基类，输出流Writer基类"><span class="nav-number">25.</span> <span class="nav-text">字符流：输入流Reader基类，输出流Writer基类</span></a></li></ol>
+    
+    </div>
+  </aside>
+
+</section>
+        
+      </div>
+      
+      <footer id="footer">
   
 
-	<!-- async load  -->
-	<script>
-			function async(u, c) {
-				var d = document, t = 'script',
-						o = d.createElement(t),
-						s = d.getElementsByTagName(t)[0];
-				o.src = u;
-				if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
-				s.parentNode.insertBefore(o, s);
-			}
-	</script>
-	<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
-	<script>
-			async("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
-					anchors.options = {
-						visible: 'hover',
-						placement: 'left',
-						// icon: '#'
-					};
-					anchors.add().remove('.article-title').remove('.subheading').remove('.sidebar-container h5');
-			})
-	</script>
-	<style>
-			/* place left on bigger screen */
-			@media all and (min-width: 800px) {
-					.anchorjs-link{
-							position: absolute;
-							left: -0.75em;
-							font-size: 1.1em;
-							margin-top : -0.1em;
-					}
-			}
-	</style>
+  <div class="container">
+      	<div class="row">
+	      <p> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/iTimeTraveler/hexo-theme-hiker" target="_blank">Hexo-theme-hiker</a> </p>
+	      <p id="copyRightEn">Copyright &copy; 2013 - 2018 Hexo All Rights Reserved.</p>
+	      
+	      
+    		<p class="busuanzi_uv">
+				UV : <span id="busuanzi_value_site_uv"></span> |  
+				PV : <span id="busuanzi_value_site_pv"></span>
+		    </p>
+  		   
+		</div>
 
-
-
-
-<!-- UY BEGIN -->
-	<div id="gitment-container"></div>
-	<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-	<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
-	<script src="/js/web-pinyin.js"></script>
-	<script>
-		function toUnicode(s){ 
-			return s.replace(/([\u4E00-\u9FA5]|[\uFE30-\uFFA0])/g,function(){
-			return "\\u" + RegExp["$1"].charCodeAt(0).toString(16);
-			});
-		}
-		var title = 'JAVA'
-		var GitHub_id = 'Boseny'
-		var client_id = 'f40c67d0359a2646d2b1'
-		var client_secret = '1cbedbd1a1a2e4b42901aee3d7afe1856c1b7e2d'
-		var repo = 'boseny.me'
-		var gitment = new Gitment({
-		// id: '页面 ID', // 可选。默认为 location.href
-		// id:"11" ,
-		id: title,
-		title: title,
-		owner: GitHub_id,//'你的 GitHub ID',
-		repo: repo,//'存储评论的 repo',
-		oauth: {
-			client_id: client_id,//'你的 client ID',
-			client_secret: client_secret,//'你的 client secret',
-		},
-		})
-		gitment.render('gitment-container')
-	</script>
-<!-- UY END -->
-
-
-
-
-            </main>
-          </div>
-        </div>
-       
-    <footer class="site-footer">
-  <p class="site-info">
-    Proudly powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and
-    Theme by <a href="https://github.com/BosenY/Lap" target="_blank">Lap</a>
-    <br><span id="busuanzi_container_site_uv"> 
-  本站访客数<span id="busuanzi_value_site_uv"></span>人次
-</span>
-    <br>
-    
-      
-        &copy; 2018 John Doe
-      
-    
-  </p>
+		
+  </div>
 </footer>
-    
+
+
+<!-- min height -->
+
 <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    var wrapdiv = document.getElementById("wrap");
+    var contentdiv = document.getElementById("content");
+    var allheader = document.getElementById("allheader");
 
-    ga('create', 'UA-92842840-1', 'auto');
-    ga('send', 'pageview');
+    wrapdiv.style.minHeight = document.body.offsetHeight + "px";
+    if (allheader != null) {
+      contentdiv.style.minHeight = document.body.offsetHeight - allheader.offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    } else {
+      contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    }
+</script>
+    </div>
+    <!-- <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/categories" class="mobile-nav-link">Categories</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav> -->
+    
 
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 
 
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/scripts.js"></script>
+
+
+
+
+  <script src="/js/dialog.js"></script>
+
+
+
+
+
+
+
+
+	<div style="display: none;">
+    <script src="https://s95.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
   </div>
 
+
+
+	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+	</script>
+
+
+
+
+
+
+  </div>
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="myModalLabel">设置</h2>
+      </div>
+      <hr style="margin-top:0px; margin-bottom:0px; width:80%; border-top: 3px solid #000;">
+      <hr style="margin-top:2px; margin-bottom:0px; width:80%; border-top: 1px solid #000;">
+
+
+      <div class="modal-body">
+          <div style="margin:6px;">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" onclick="javascript:setFontSize();" aria-expanded="true" aria-controls="collapseOne">
+              正文字号大小
+            </a>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            您已调整页面字体大小
+          </div>
+        </div>
+      
+
+
+          <div style="margin:6px;">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" onclick="javascript:setBackground();" aria-expanded="true" aria-controls="collapseTwo">
+              夜间护眼模式
+            </a>
+        </div>
+          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <div class="panel-body">
+            夜间模式已经开启，再次单击按钮即可关闭 
+          </div>
+        </div>
+
+        <div>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;关 于&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        </div>
+         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+          <div class="panel-body">
+            Hexo
+          </div>
+          <div class="panel-body">
+            Copyright © 2018 John Doe All Rights Reserved.
+          </div>
+        </div>
+      </div>
+
+
+      <hr style="margin-top:0px; margin-bottom:0px; width:80%; border-top: 1px solid #000;">
+      <hr style="margin-top:2px; margin-bottom:0px; width:80%; border-top: 3px solid #000;">
+      <div class="modal-footer">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+      </div>
+    </div>
+  </div>
 </div>
-<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<script src="https://cdn.bootcss.com/vue/2.5.13/vue.min.js"></script>
-<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-  <script src="https://unpkg.com/draw-something/dist/draw.min.js"></script>
-  <script>
-    let maxNum = Number.parseInt('10')
-    let iconText = '❤'
-    let color = 'red'
-    new Draw({maxNum, iconText, color})
-  </script>
-
-<script src="/js/index.js"></script>
-<script src="/js/search.js"></script>
-
+  
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+  
+    <a id="menu-switch"><i class="fa fa-bars fa-lg"></i></a>
+  
 </body>
 </html>

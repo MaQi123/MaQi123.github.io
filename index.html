@@ -1,657 +1,601 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
   <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  
+  
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="default">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
 
   
-  <meta name="author" content="John Doe">
+
+  <link rel="icon" href="/css/images/mylogo.jpg">
+  <link rel="apple-touch-icon" href="/css/images/mylogo.jpg">
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <style type="text/css">
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
+  <link rel="stylesheet" href="/css/style.css">
+
+  <script src="/js/jquery-3.1.1.min.js"></script>
+  <script src="/js/bootstrap.js"></script>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.css">
+
+  
+    <link rel="stylesheet" href="/css/home.css">
   
 
   
 
   
 
-  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+  
+    <link rel="stylesheet" href="/css/vdonate.css">
+  
+
+</head>
+</html>
+
+
+  <body>
+
+
+  
+    <header id="header">
+
+	<!-- 背景图模式 -->
+	
+
+    
+      <div id="intrologo" class="intro-logo" style="background-position:center; background-repeat:no-repeat; background-image: url(); background-size: auto 100%;">
+
+      <!-- Support rolling -->  
+        
+        <section class="awSlider">
+          <div class="carousel slide carousel-fade " data-ride="carousel">
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+               
+                  
+                    <div class="item active">
+                  
+                    <img id="carousel-img0" src="/css/images/home-bg.jpg">
+                  </div>
+
+                  <!-- 自适应大图 -->
+                  <script>
+                      var img0 = new Image();
+                      var imageTag0 = document.getElementById("carousel-img0");
+                      img0.src = imageTag0.src;
+                      img0.onload=function(){
+                        if (img0.width / img0.height <= document.body.clientWidth / document.body.clientHeight) {
+                          imageTag0.style.width = document.body.clientWidth + "px";
+                        } else {
+                          imageTag0.style.height = document.body.clientHeight + "px";
+                          imageTag0.style.marginLeft = -(document.body.clientHeight * img0.width / img0.height - document.body.clientWidth) / 2 + "px";
+                        }
+                      };
+                  </script>
+                
+                  
+                    <div class="item">
+                  
+                    <img id="carousel-img1" src="/css/images/sample.jpg">
+                  </div>
+
+                  <!-- 自适应大图 -->
+                  <script>
+                      var img1 = new Image();
+                      var imageTag1 = document.getElementById("carousel-img1");
+                      img1.src = imageTag1.src;
+                      img1.onload=function(){
+                        if (img1.width / img1.height <= document.body.clientWidth / document.body.clientHeight) {
+                          imageTag1.style.width = document.body.clientWidth + "px";
+                        } else {
+                          imageTag1.style.height = document.body.clientHeight + "px";
+                          imageTag1.style.marginLeft = -(document.body.clientHeight * img1.width / img1.height - document.body.clientWidth) / 2 + "px";
+                        }
+                      };
+                  </script>
+                
+                  
+                    <div class="item">
+                  
+                    <img id="carousel-img2" src="https://source.unsplash.com/collection/954550/1920x1080">
+                  </div>
+
+                  <!-- 自适应大图 -->
+                  <script>
+                      var img2 = new Image();
+                      var imageTag2 = document.getElementById("carousel-img2");
+                      img2.src = imageTag2.src;
+                      img2.onload=function(){
+                        if (img2.width / img2.height <= document.body.clientWidth / document.body.clientHeight) {
+                          imageTag2.style.width = document.body.clientWidth + "px";
+                        } else {
+                          imageTag2.style.height = document.body.clientHeight + "px";
+                          imageTag2.style.marginLeft = -(document.body.clientHeight * img2.width / img2.height - document.body.clientWidth) / 2 + "px";
+                        }
+                      };
+                  </script>
+                
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href=".carousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Geri</span>
+            </a>
+            <a class="right carousel-control" href=".carousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">İleri</span>
+            </a>
+          </div>
+        </section>
+        <script>
+          $('section.awSlider .carousel').carousel({
+              pause: '',
+              interval: 5000
+          });
+          var startImage = $('section.awSlider .item.active > img').attr('src');
+          $('section.awSlider .carousel').on('slid.bs.carousel', function () {
+              var bscn = $(this).find('.item.active > img').attr('src');
+              $('section.awSlider > img').attr('src', bscn);
+          });
+        </script>
+      
+
+    
+ 
+
+
+    <canvas width="100%" height="100%"></canvas>
+    <script>
+      var c = document.getElementsByTagName('canvas')[0],
+          x = c.getContext('2d'),
+          w = window.innerWidth,
+          h = window.innerHeight,
+          pr = window.devicePixelRatio || 1,
+          f = 90,
+          q,
+          m = Math,
+          r = 0,
+          u = m.PI*2,
+          v = m.cos,
+          z = m.random
+      c.width = w*pr
+      c.height = h*pr
+      x.scale(pr, pr)
+      x.globalAlpha = 0.6
+
+      <!-- 折线Polyline背景 -->
+      
+    </script>
+    
+
+    
+      <div id="homelogo" class="homelogo" style="background: rgba(255,255,255,1);"> 
+    
+
+        
+          <div class="homelogoback" style="border: 1px solid #404040;">
+            <h1><a href="#content" id="logo">Hexo</a></h1>
+            <h3></h3>
+            <h5>John Doe</h5>
+            <!-- <p><a href="https://github.com/iTimeTraveler" target="_blank">Github</a></p> -->
+          </div>
+        
+    
+    </div>
+  </div>
+
+  <!-- 自适应主页背景大图 -->
+  
+
+ <!-- home_logo_image居中 -->
+ 
+    <script>
+        var homelogodiv = document.getElementById("homelogo");
+        if (document.all.homelogo.offsetWidth > document.body.clientWidth) {
+          homelogodiv.style.width = document.body.clientWidth + "px";
+          homelogodiv.style.marginLeft = document.body.clientWidth * -0.5 + "px";
+        } else {
+          homelogodiv.style.width = homelogodiv.clientWidth  + "px";
+          homelogodiv.style.marginLeft = (homelogodiv.clientWidth)  * -0.5 + "px";
+        }
+    </script>
+  
+
+  <div class="intro-navigate">
+      <p class="navigater-list">
+        
+          <a id="beautifont" class="main-nav-link" href="/">Home</a>
+        
+          <a id="beautifont" class="main-nav-link" href="/archives">Archives</a>
+        
+          <a id="beautifont" class="main-nav-link" href="/categories">Categories</a>
+        
+          <a id="beautifont" class="main-nav-link" href="/tags">Tags</a>
+        
+          <a id="beautifont" class="main-nav-link" href="/about">About</a>
+        
+      </p>
+  </div>
+
+</header>
+  
+  <div id="container">
+    <div id="wrap">
+      
+            
+      <div id="content" class="outer">
+        
+          <section id="main" style="float:none;">
+  
+    <article id="post-SSH" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2017/02/03/SSH/">SSH</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2017/02/03/SSH/" class="article-date">
+	  <time datetime="2017-02-03T07:18:30.000Z" itemprop="datePublished">2017-02-03</time>
+	</a>
+
+      
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p class="article-excerpt-content">
+          
+Hibernate1.Hibernate优点：1）对象/关系数据库映射(Basic O/R Mapping)它使用时只需要操纵对象，使开发更对象化，抛弃了数据库中心的思想，完全的面向对象思想。2）透明持久化(Persistent)带有持久化状态的、具有业务功能的单线程对象，此对象生存期很短。这些对象可能是普通的JavaBeans/POJO，这个对象没有实现第三方框架或者接口，唯一特殊的是他们正与（仅仅一个）Session相关联。一旦这个Session被关闭，这些对象就会脱离持久化状态，这...
+        </p>
+        <p class="article-more-link">
+          <a href="/2017/02/03/SSH/#more">Read More</a>
+        </p>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+      
+
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+
+  
+    <article id="post-SqlServer" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2016/11/15/SqlServer/">SQL Server</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2016/11/15/SqlServer/" class="article-date">
+	  <time datetime="2016-11-15T01:30:12.000Z" itemprop="datePublished">2016-11-15</time>
+	</a>
+
+      
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p class="article-excerpt-content">
+          
+数据库基本概念：实体和记录实体：所有客观存在的，可以被描述的事物。记录 ：每一行对应一个实体，在数据库中，通常叫做一条记录数据冗余：数据重复的现象数据完整性：数据库中数据的准确性。
+新建一个数据库：1.在ssms中的菜单栏中选择“文件”——“连接对象资源管理器”选项，弹出“连接服务器对话框”。2.在服务器名称 下拉列表框中选择连接过的服务器。也可以选择 浏览更多 选项来选择其他的服务器。3需要身份验证： Windows身份验证 SQL Server身份验证。
+新建数据库登录名：1.在安全...
+        </p>
+        <p class="article-more-link">
+          <a href="/2016/11/15/SqlServer/#more">Read More</a>
+        </p>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+      
+
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+
+  
+    <article id="post-java" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2015/09/17/java/">JAVA</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2015/09/17/java/" class="article-date">
+	  <time datetime="2015-09-17T03:12:19.000Z" itemprop="datePublished">2015-09-17</time>
+	</a>
+
+      
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p class="article-excerpt-content">
+          
+什么是JDK：JDK全称(java Development kit)java 工具开发包就是是能够实行编译和运行的功能  
+
+jdk中的重要文件：
+Jvm：java virtual machine(java虚拟机)java程序就在JVM中运行的java核心类库：已经编写好的java类
+
+如何配置环境变量： 计算机—属性—高级系统设置—环境变量。在新的打开界面中的系统变量需要设置三个属性 1.“JAVA_HOME” 2.“path” 3.“classpath”,其中在没安装jdk的环境下。...
+        </p>
+        <p class="article-more-link">
+          <a href="/2015/09/17/java/#more">Read More</a>
+        </p>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+      
+
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
 
   
 
-  <meta property="og:site_name" content="Hexo">
 
+</section>
+        
+      </div>
+      
+        <div align="center" style="margin-top: 30px;"><hr class="hr" style="margin:0px; height:3px;"></div>
+      
+      <footer id="footer">
   
-  <meta property="og:image" content="/favicon.ico">
-  
-  
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+  <div class="container">
+      	<div class="row">
+	      <p> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/iTimeTraveler/hexo-theme-hiker" target="_blank">Hexo-theme-hiker</a> </p>
+	      <p id="copyRightEn">Copyright &copy; 2013 - 2018 Hexo All Rights Reserved.</p>
+	      
+	      
+    		<p class="busuanzi_uv">
+				UV : <span id="busuanzi_value_site_uv"></span> |  
+				PV : <span id="busuanzi_value_site_pv"></span>
+		    </p>
+  		   
+		</div>
+
+		
+  </div>
+</footer>
+
+
+<!-- min height -->
+
 <script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-5005349780815724",
-    enable_page_level_ads: true
+    var wrapdiv = document.getElementById("wrap");
+    var contentdiv = document.getElementById("content");
+    var allheader = document.getElementById("allheader");
+
+    wrapdiv.style.minHeight = document.body.offsetHeight + "px";
+    if (allheader != null) {
+      contentdiv.style.minHeight = document.body.offsetHeight - allheader.offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    } else {
+      contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    }
+</script>
+    </div>
+    <!-- <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/categories" class="mobile-nav-link">Categories</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav> -->
+    
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
   });
 </script>
 
-  
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?223eea22355699157e147870eb124b24";
-  var s = document.getElementsByTagName("script")[0];
-  s.parentNode.insertBefore(hm, s);
-})();
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 
 
-  <link rel="manifest" href="/manifest.json">
-  <link href="/favicon.ico" rel="icon">
-
-  <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="/css/base/bootstrap.min.css" media="screen" type="text/css">
-  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
 
 
-</head>
+<script src="/js/scripts.js"></script>
 
 
-<body>
-<div class="blog">
-  <div class="content">
-
-    
-
-    <header class="header-container" style="background-image: url('/images/blog-bg.jpg');">
+  <script src="/js/home.js"></script>
 
 
-<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
-    <div class="container-fluid">
-        <div class="navbar-header page-scroll">
-          <button type="button" id="tglBtn" class="navbar-toggle">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="/">John Doe</a>
+
+
+
+
+
+
+
+
+	<div style="display: none;">
+    <script src="https://s95.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+  </div>
+
+
+
+	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+	</script>
+
+
+
+
+
+
+  </div>
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="myModalLabel">设置</h2>
+      </div>
+      <hr style="margin-top:0px; margin-bottom:0px; width:80%; border-top: 3px solid #000;">
+      <hr style="margin-top:2px; margin-bottom:0px; width:80%; border-top: 1px solid #000;">
+
+
+      <div class="modal-body">
+          <div style="margin:6px;">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" onclick="javascript:setFontSize();" aria-expanded="true" aria-controls="collapseOne">
+              正文字号大小
+            </a>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            您已调整页面字体大小
+          </div>
         </div>
-        <div id="bosenyblog-navbar">
-          <div class="navbar-collapse" id="bs-example-navbar-collapse-6">
-            <ul class="nav navbar-nav navbar-right">
-            
-              <li><a href="/">Home</a></li>
-            
-              <li><a href="/archives">Archives</a></li>
-            
-              <li><a href="/about">About</a></li>
-            
-              <li><a href="/tags">Tags</a></li>
-            
-            </ul>
+      
+
+
+          <div style="margin:6px;">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" onclick="javascript:setBackground();" aria-expanded="true" aria-controls="collapseTwo">
+              夜间护眼模式
+            </a>
+        </div>
+          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <div class="panel-body">
+            夜间模式已经开启，再次单击按钮即可关闭 
           </div>
         </div>
 
-    </div>
- </nav>
- <div class="gotop-btn">
-
- </div>
-</header>
-
-        
-        <div class="container ">
-          <div class="row">
-            <main class="site-main posts-loop    col-lg-8 col-lg-offset-1
-                    col-md-8 col-md-offset-1
-                    col-sm-12
-                    col-xs-12">
-            
-  <article class="article-container ">
-
-  
-    
-    <h3 class="article-title"><a href="/2017/02/03/SSH/"><span>SSH</span></a></h3>
-    
-  
-
-  <div class="article-top-meta">
-    <span class="posted-on">
-      <a href="/2017/02/03/SSH/" rel="bookmark">
-        <time class="entry-date published" datetime="2017-02-03T07:18:30.000Z">
-          2017-02-03
-        </time>
-      </a>
-    </span>
-    <br>
-    
-  </div>
-
-
-  
-
-  <div class="article-content">
-    <div class="entry">
-      
-          <a id="more"></a>
-<p>Hibernate<br>1.Hibernate优点：<br>1）对象/关系数据库映射(Basic O/R Mapping)<br>它使用时只需要操纵对象，使开发更对象化，抛弃了数据库中心的思想，完全的面向对象思想。<br>2）透明持久化(Persistent)<br>带有持久化状态的、具有业务功能的单线程对象，此对象生存期很短。这些对象可能是普通的JavaBeans/POJO，这个对象没有实现第三方框架或者接口，唯一特殊的是他们正与（仅仅一个）Session相关联。一旦这个Session被关闭，这些对象就会脱离持久化状态，这样就可被应用程序的任何层自由使用。（例如，用作跟表示层打交道的数据传输对象。）<br>3）事务Transaction (org.Hibernate.Transaction)<br>应用程序用来指定原子操作单元范围的对象，它是单线程的，生命周期很短。它通过抽象将应用从底层具体的JDBC、JTA以及CORBA事务隔离开。某些情况下，一个Session之内可能包含多个Transaction对象。尽管是否使用该对象是可选的，但无论是使用底层的API还是使用Transaction对象，事务边界的开启与关闭是必不可少的。<br>　　（4）它没有侵入性，即所谓的轻量级框架。<br>　　（5）移植性会很好。<br>　　（6）缓存机制。提供一级缓存和二级缓存。<br>　　（7）简洁的HQL编程。<br>2.Hibernate缺点：<br>1）Hibernate在批量数据处理的时候是有弱势。</p>
-<h2 id="2）针对某一对象-单个对象-简单的查-改-删-增，不是批量修改、删除，适合用Hibernate；而对于批量修改、删除，不适合用Hibernate，这也是OR框架的弱点-要使用数据库的特定优化机制的时候，不适合用Hibernate。"><a href="#2）针对某一对象-单个对象-简单的查-改-删-增，不是批量修改、删除，适合用Hibernate；而对于批量修改、删除，不适合用Hibernate，这也是OR框架的弱点-要使用数据库的特定优化机制的时候，不适合用Hibernate。" class="headerlink" title="2）针对某一对象(单个对象)简单的查\改\删\增，不是批量修改、删除，适合用Hibernate；而对于批量修改、删除，不适合用Hibernate，这也是OR框架的弱点;要使用数据库的特定优化机制的时候，不适合用Hibernate。"></a>2）针对某一对象(单个对象)简单的查\改\删\增，不是批量修改、删除，适合用Hibernate；而对于批量修改、删除，不适合用Hibernate，这也是OR框架的弱点;要使用数据库的特定优化机制的时候，不适合用Hibernate。</h2><p>Hibernate与Mybatis的区别<br>相同点：<br>1）Hibernate与MyBatis都是通过SessionFactoryBuider由XML配置文件生成SessionFactory，由SessionFactory 生成Session，由Session来开启执行事务和SQL语句。<br>2）Hibernate和MyBatis都支持JDBC和事务处理。<br>3）基于ORM思想解决了entity和数据库的映射问题<br>不同点：<br>1）sql方面：mybaits通过mapper.xml维护映射结果，程序员手动编写sql相比hibernate自动生成hql（hibernate sql）更加灵活，hibernate的hql数据库移植性更好，体现在强壮性。hibernate在级联删除的时候效率低；数据量大， 表多的时候，基于关系操作会变得复杂。</p>
-<h2 id="2）缓存方面：mybatis和hibernate都可以使用第三方缓存，而hibernate相比maybatis有更好的二级缓存机制。"><a href="#2）缓存方面：mybatis和hibernate都可以使用第三方缓存，而hibernate相比maybatis有更好的二级缓存机制。" class="headerlink" title="2）缓存方面：mybatis和hibernate都可以使用第三方缓存，而hibernate相比maybatis有更好的二级缓存机制。"></a>2）缓存方面：mybatis和hibernate都可以使用第三方缓存，而hibernate相比maybatis有更好的二级缓存机制。</h2><p>Hibernate环境搭建<br>1、部署jar文件<br>2、创建Hibernate配置文件hibernate.cfg.xml</p>
-<p>3、创建持久化类和映射文件（映射文件名与持久类同名以“.hbm.xml”为后缀）</p>
-<hr>
-<p>主键查询一条数据:<br>1、session.get(Class clazz,Serializable id);<br>2、session.load(Class clazz.Serializable  id)<br>开启事务:<br>session.beginTransaction()<br>新增:<br>session.save(实体类对象)；<br>修改:<br>Dept dept=session.load(Class clazz.Serializable  id)<br>dept.setName(“张三”)；<br>dept.setAge(18);<br>删除:<br>Dept dept=session.load(Class clazz.Serializable  id)</p>
-<h2 id="session-delete-dept"><a href="#session-delete-dept" class="headerlink" title="session.delete(dept);"></a>session.delete(dept);</h2><p>Hibernate中Java对象三种状态<br>1瞬时状态（Transient）<br>通过new创建对象后，对象并没有立即持久化 他并未与数据库发生任何关系，此时java对象的状态为瞬时状态，Session对与瞬时状态的对象一无所知，当对象不在被其他对象引用时他的数据也就丢失了，对象将按照垃圾回收机制处理<br>2持久状态（Persistent）<br>当对象与Session关联 被Session管理时 他就处于持久状态，处于持久状态的对象拥有数据标识（数据库中的主键值）那么对象是什么时候与session对象关联的呢<br>有两种方式：第一种通过Session的查询接口或者是get（）方法或者是load方法（）从数据库中加载对象的时候，家在状态的对象，通过调用session的save方法或者saveOrUpdate方法时java对象也与session发生关联，对于处于持久状态的对象，session会跟踪和管理他们，如果对象的内部状态发生了任何变化，hibernate会选择合适的实际（如事务提交时）将变更固化到数据库中。<br>3游离状态（Detached）<br>处于持久化的对象 脱离与其关联的Session管理后对象就处于游离状态，处于游离状态的对象Hibernate无法感知到对象的任何操作Session提供了两个方法（Update（） merge（））将处于游离状态的对象与一个新的session发生关联，这是对象的状态就从游离转持久化。</p>
-<hr>
-<p>脏检查（数据前后发生变化的对象）<br>示例：<br>Dept dept=session.load(Class clazz.Serializable  id)<br>dept.setName(“张三”)；<br>dept.setAge(18);<br>刷新缓存机制<br>1、应用程序调用session的flush()方法时</p>
-<h2 id="2、应用程序调用Transaction的commit-方法时"><a href="#2、应用程序调用Transaction的commit-方法时" class="headerlink" title="2、应用程序调用Transaction的commit()方法时"></a>2、应用程序调用Transaction的commit()方法时</h2><p>HQL<br>Query对象<br>String hql=”from Dept”;<br>Query query=session.createQuery(hql);<br>参数绑定<br>1、按参数位置绑定<br>//参数为字符串调用 setString()方法……..，第一个参数代表位置，第二个代表hql中的值<br>String hql=”from Dept where id=? and name=?”;<br>Query query=session.createQuery(hql);<br>query.setInt(0,12);<br>query.setString(1,”张三”)；<br>2、按参数名称绑定<br>String hql=”from Dept where id=:id and name=:name”;<br>Query query=session.createQuery(hql);<br>query.setInt(“id”,12);<br>query.setString(“name”,”张三”)；<br>//query接口中定义不同类型的参数方法，同时还提供了setParameter()用来绑定任意类型<br>Query分页查询<br>setFirstResult(其实位置)<br>setMaxResults(页数)<br>实例：<br>List<emp> list=session.createQuery(“from Emp”)<br>.setFirstResult((pageNo-1)*size)</emp></p>
-<h2 id="setMaxResults-size"><a href="#setMaxResults-size" class="headerlink" title=".setMaxResults(size);"></a>.setMaxResults(size);</h2><p>关联映射<br>对象间的关联分为一对多，多对一和多对多等几种情况，关联是有方向的，可以是双向关联，也可以是单向的关联</p>
-<h2 id="hibernate通过配置的方式，将对象的关联关系映射到数据库上，方便完成多表的持久化操作"><a href="#hibernate通过配置的方式，将对象的关联关系映射到数据库上，方便完成多表的持久化操作" class="headerlink" title="hibernate通过配置的方式，将对象的关联关系映射到数据库上，方便完成多表的持久化操作"></a>hibernate通过配置的方式，将对象的关联关系映射到数据库上，方便完成多表的持久化操作</h2><p>连接查询<br>现在假设有user和stundent两张表<br>1.默认查询的情况:<br>from User u where u.name like ‘%Java%’<br>2.迫切左外连接<br>from User u left join fetch u.student s where u.name like ‘%java%’<br>3.左外连接<br>from User u left join u.student s where u.name like ‘%java%’<br>4.迫切内连接<br>from User u inner join fetch u.student where u.name like ‘%java%’<br>5.内连接<br>from User u inner join u.student where u.name like ‘%java%’<br>6.右外连接<br>from User u right join u.student where u.name like ‘%java%’</p>
-<h2 id="总结大概就这些吧-对于迫切连接的话-基本区别在于如果是用迫切连接的话当进行连接检索时student集合会立即被初始化-而后者采用的是映射文件配置的延迟检索策略-因此student集合不会被立即初始化"><a href="#总结大概就这些吧-对于迫切连接的话-基本区别在于如果是用迫切连接的话当进行连接检索时student集合会立即被初始化-而后者采用的是映射文件配置的延迟检索策略-因此student集合不会被立即初始化" class="headerlink" title="总结大概就这些吧!对于迫切连接的话,基本区别在于如果是用迫切连接的话当进行连接检索时student集合会立即被初始化,而后者采用的是映射文件配置的延迟检索策略,因此student集合不会被立即初始化"></a>总结大概就这些吧!对于迫切连接的话,基本区别在于如果是用迫切连接的话当进行连接检索时student集合会立即被初始化,而后者采用的是映射文件配置的延迟检索策略,因此student集合不会被立即初始化</h2><p>聚合函数<br>count()    //统计条数<br>sum()    //和<br>min()    //最小值<br>max()    //最大值</p>
-<h2 id="avg-平均值"><a href="#avg-平均值" class="headerlink" title="avg()    //平均值"></a>avg()    //平均值</h2><p>子查询关键字<br>all            返回所有记录<br>any            返回任意一条记录<br>some        “any”相同<br>in            “=any”相同</p>
-<h2 id="exists-至少返回一条语句"><a href="#exists-至少返回一条语句" class="headerlink" title="exists        至少返回一条语句"></a>exists        至少返回一条语句</h2><p>注解<br>Hibernate提供了注解功能，可以代替hbm.xml文件完成关系映射工作<br>Hql<br>持久化类常用注解</p>
-<p>@Table可以省略，省略时表名必须与持久化名相同</p>
-<h2 id="Column可以省略，省略时字段名必须与属性名相同"><a href="#Column可以省略，省略时字段名必须与属性名相同" class="headerlink" title="@Column可以省略，省略时字段名必须与属性名相同"></a>@Column可以省略，省略时字段名必须与属性名相同</h2>
-      
-    </div>
-    
-  </div>
-
-  <div class="article-footer">
-    <div class="article-meta pull-left">
-
-    
-
-    
-
-    </div>
-
-    
-  </div>
-  
-    
-    <h3 class="article-read"><a href="/2017/02/03/SSH/"><span>more</span></a></h3>
-    
-  
-</article>
-
-
-
-
-
-  <article class="article-container ">
-
-  
-    
-    <h3 class="article-title"><a href="/2016/11/15/SqlServer/"><span>SQL Server</span></a></h3>
-    
-  
-
-  <div class="article-top-meta">
-    <span class="posted-on">
-      <a href="/2016/11/15/SqlServer/" rel="bookmark">
-        <time class="entry-date published" datetime="2016-11-15T01:30:12.000Z">
-          2016-11-15
-        </time>
-      </a>
-    </span>
-    <br>
-    
-  </div>
-
-
-  
-
-  <div class="article-content">
-    <div class="entry">
-      
-          <a id="more"></a>
-<p>数据库基本概念：实体和记录<br>实体：所有客观存在的，可以被描述的事物。<br>记录 ：每一行对应一个实体，在数据库中，通常叫做一条记录<br>数据冗余：数据重复的现象<br>数据完整性：数据库中数据的准确性。</p>
-<p>新建一个数据库：<br>1.在ssms中的菜单栏中选择“文件”——“连接对象资源管理器”选项，弹出“连接服务器对话框”。<br>2.在服务器名称 下拉列表框中选择连接过的服务器。也可以选择 浏览更多 选项来选择其他的服务器。<br>3需要身份验证： Windows身份验证 SQL Server身份验证。</p>
-<p>新建数据库登录名：<br>1.在安全性节点下，点击登录名，在弹出的快捷菜单中选择 新建登录名 选项<br>2.在新建登录对话框中数据登录名，密码，并指定其默认的数据库。<br>3.有了登录名，还需要赋予该登录名操作权限，否则它将只能连接到服务器，而没有任何操作权限。</p>
-<p>新建数据库用户：<br>1.在指定数据库安全性节点下，右击用户，在弹出的快捷菜单中选择“新建用户”选项。<br>2.在新建对话框中输入用户的名称，选择关联得到登录名，<br>有了用户名和关联登录名之后 还需要赋予用户对该数据库的操作权限。</p>
-<p>创建数据库:<br>1.数据库文件：存放数据库数据和数据库对象文件<br>2.事务日志文件：用来记录数据库的更新情况，在对数据库进行操作时，数据库中内容更改的操作信息都会记录在此文件中。<br>3.文件组：主要用于分配磁盘并进行管理</p>
-<p>分离和附加数据库：<br>1.右击数据库，在弹出快捷菜单中选择 任务 分离选项。将打开数据库窗口，可以对数据库执行分离操作。单击确定按钮以后，分离的数据库将不再显示在数据库列表中，但是其物理文件依然保存在磁盘中，此时磁盘文件可以复制 粘贴的。<br>2.把磁盘上的数据库文件复制到其他计算机后，通过附加 操作来恢复数据库。</p>
-<p>备份和还原数据库:<br>四种备份：完全备份，差异备份，事务日志备份，文件和文件组备份。</p>
-<p>收缩数据库分为：自动和手动。<br> 删除数据库：</p>
-<p>数据库完整性：<br>1.实体完整性约束：通过索引，唯一约束，主键约束或标识列属性，可以实现表的实体完整性。<br>2.域完整性约束：通过限制数据类型，检查约束，输入格式，外检约束，默认值，非空约束来实现<br>3引用完整性约束：再输入和删除数据行时，引用完整性约束来保持表之间已定义的关系。<br>4.自定义完整性约束：用户自定义完整性用来定义特定的规则。</p>
-<p>主键：用来唯一标识表中的每一行用于强制表的实体完整性.不允许有空值<br>外检：用来强制引用完整性。一个表可以有多个外键</p>
-<p>建立表间关系：<br>1.在设计表的时候，在成绩中点击右键，在弹出快捷菜单选择关系选项弹出外键关系对话框。单击添加按钮可以添加新的关系。<br>2单击表盒列的规范最右侧的小按钮，弹出要建立关系的逐渐表及主键列对话框<br>3选择逐渐表为xx，主键列为xx，对应的外键表为xx，列为xx</p>
-<p>Sql简介：<br>“结构化查询语句”，关系数据库的标准语言<br>sql的运算符     ‘ + ‘  ‘ - ‘  ‘ * ‘  ‘ / ‘  ‘ % ‘<br>赋值运算符     =<br>比较运算符      =  &gt;  &lt; &lt;&gt; &gt;= &lt;= !=<br>逻辑运算符     and  or  not<br>use            –使用<br>insert        –插入<br>into           –到<br>select        –选择<br>values       –值<br>default      –默认<br>from          –哪里<br>union        –并集；结合<br>delete       –删除<br>where       –哪里<br>update      –更新；更改<br>set             –设置<br>order by      –排序<br>asc             –升序<br>desc           –降序<br>percent       –百分比<br>T-SQL 里的两种注释<br>1、单行注释：   –<br>2、多行注释：  /**/</p>
-<p>增：<br>单行增加<br>方法1：写出列名,值与列名一一对应<br>INSERT INTO  表名<br>(列名，列名)<br>values（值，值）<br>方法2：不写列名,值与列中的列名一一对应<br>INSERT INTO  表名<br>values（值，值）<br>方法3：遇到没有的信息可以使用default代替<br>INSERT INTO  表名<br>values（值，default）<br>多行增加<br>方法1（复制）：<br>插入的新表必须存在，列也必须存在，新表和插入列数据类型要保持一致<br>INSERT INTO 新表名（列，列，列）<br>SELECT 插入表列，插入表列，插入表列<br>FROM 插入表名<br>方法2（复制）：<br>新表可以没有，直接在INTO后面输入新表名<br>SELECT 插入表列，插入表列，插入表列<br>INTO 新表名<br>FROM 插入表名<br>方法3<br>INSERT INTO 表名<br>(列名，列名，列名)<br>SELECT 值，值，值 UNION<br>SELECT 值，值，值 UNION</p>
-<h2 id="SELECT-值，值，值"><a href="#SELECT-值，值，值" class="headerlink" title="SELECT 值，值，值 "></a>SELECT 值，值，值 </h2><p>删：<br>方法1：删除指定条件记录<br>delete from 表名   //删除那个表里的东西<br>where id=’1’        //这个表里哪个列<br>方法2：删除含有外键表中对应值记录\<br>delete from 子表名<br>where id=1<br>go<br>delete from 主表名<br>where id=1</p>
-<h2 id="注意：删除主表的数据必须先删除子表中的数据，主表里有的数据，子表才能添加"><a href="#注意：删除主表的数据必须先删除子表中的数据，主表里有的数据，子表才能添加" class="headerlink" title="注意：删除主表的数据必须先删除子表中的数据，主表里有的数据，子表才能添加"></a>注意：删除主表的数据必须先删除子表中的数据，主表里有的数据，子表才能添加</h2><p>改：<br>方法1：更新所有行<br>UPDATE 表名<br>SET 列名=’xx’ , 列名=’xx’, 列名=’xx’</p>
-<p>方法2:更改指定行<br>UPDATE 表名<br>SET 列名=’xx’ , 列名=’xx’, 列名=’xx’<br>WHERE id=1</p>
-<p>方法3:多条件更改指定行<br>UPDATE 表名<br>SET 列名=’xx’ , 列名=’xx’, 列名=’xx’</p>
-<h2 id="WHERE-id-1-and-name-’小朱’"><a href="#WHERE-id-1-and-name-’小朱’" class="headerlink" title="WHERE id=1 and name=’小朱’ "></a>WHERE id=1 and name=’小朱’ </h2><p>查：<br>方法1：查询所有数据行<br>SELECT * FROM 表名</p>
-<p>方法2：查询部分行或列<br>示例1<br>SELECT 列名，列名<br>FROM 表名<br>where 性别=’男’     //条件等于男<br>示例2<br>SELECT 列名，列名<br>FROM 表名<br>where 性别&lt;&gt;’女’      //条件不等于女</p>
-<p>方法3：<br>方式1.   列名 AS 别名<br>SELECT   name AS 姓名，score AS 成绩<br>FROM 表名<br>where 性别&lt;&gt;’女’<br>方式2.    别名=列名<br>SELECT  姓名=name，成绩=score<br>FROM 表名<br>where 性别&lt;&gt;’女’<br>方式3.  列名  别名<br>SELECT  姓名 name，成绩 score<br>FROM 表名<br>where 性别&lt;&gt;’女’</p>
-<p>方法4：合并列表查看<br>SELECT name+sex AS 姓名性别<br>FROM 表名<br>字符串列名+字符串列名<br>整数类型+整数类型</p>
-<p>方法5：查询空值 列名后加 IS NOT NULL<br>SELECT  *     //显示查询的所有列<br>FROM 表名<br>WHERE semail IS NOT NULL</p>
-<p>方法6：使用AS 可以加常量值<br>SELECT 姓名=StudentName,地址=Address,’北京故宫’AS’学校名称’<br>FROM dbo.Student</p>
-<p>限制条件查询的两种方式<br>1，按照固定数目查询<br>SELECT TOP 3 <em>        //查询表的前三行，</em> 代表所有行<br>FROM 表名<br>2，按照百分比查询<br>SELECT TOP 50 PERCENT *      //percent   –百分比<br>FROM 表名</p>
-<p>使用ORDER BY 进行排序：<br>查看排序:升序<br>ORDER BY 列名 ASC<br>查看排序:降序<br>ORDER BY 列名 DESC</p>
-<p>数据查询语句：<br>1、查询将逐行筛选表中的数据，按条件从新组合成“记录集”<br>2、使用IS NULL判断一行中的某列是否为NULL<br>3、使用 ORDER BY进行排序，可以按多列排序<br>4、在查询中，可以使用常量、表达式、运算符</p>
-<h2 id="5、在查询中使用函数可以完成更复杂的查询"><a href="#5、在查询中使用函数可以完成更复杂的查询" class="headerlink" title="5、在查询中使用函数可以完成更复杂的查询"></a>5、在查询中使用函数可以完成更复杂的查询</h2><p>注意事项1：<br>每次插入一行数据，不能插入半行或者几列数据<br>插入的数据是否有效是按照整行的完整性的要求来检验的<br>注意事项2：<br>每个数据值的数据类型，精度和小数位数必须与相应的列的数据类型相同<br>注意事项3：<br>不能为标识列指定值<br>注意事项4：<br>如果在设计表的时候就指定了某列不允许为空，则必须插入数据<br>注意事项5：<br>插入的数据项，要求符合检查约束的要求<br>注意事项6：<br>具有缺省值的列（）可以使用default关键字来代替插入的数值<br>注意事项7：<br>所有代码必须在英文格式下完成<br>注意事项8：<br>数据类型非值类型必须使用 ‘ ‘ 引起</p>
-<p>导出数据<br>1.右击数据库，在弹出的快捷菜单中选择 任务，导出数据 选项<br>2.选择要从何处取得数据 这时候可以选择SQL Server自身<br>3.确定将数据导出到什么位置，这时候可以在上方的目标下拉列表框中选择 平面文件 选项 然后在 文件名 文本框中输入文件的名称或单击 浏览按钮选择文件名，并确定文件相关的选项，<br>4.复制一个过多个表或视图的数据，单击下一步按钮<br>5.选择表名并设置文本文件的格式。<br>6 确定是否立即运行 单击系一部按钮一直到完成转换</p>
-<p>导入数据<br>1.首先准备数据<br>2.有机数据库，在弹出的快捷菜单中悬着 任务-导出数据 xuanxiang<br>3悬着要从何处取得数据呕<br>4.悬着将数据源复制到目标源<br>5确定后，单击下一步按钮，一直到完成转换。</p>
-<p> 第9章<br>字符串函数</p>
-<p>字符串函数<br>1、获取指定字符串的索引号位置<br>SELECT CHARINDEX(‘SERVER’,’sql server’,3)<br>2、获取字符串的长度<br>SELECT LEN(‘我们是SQLserver’) AS 长度<br>3、转换大写字母的函数<br>SELECT UPPER(‘SQL server函数’)<br>4、转换小写字母函数<br>SELECT LOWER(‘SQL SEver’)<br>5、去掉左边空格<br>SELECT LTRIM(‘    你好   ‘)<br>SELECT LEN(LTRIM(‘       你好   ‘))<br>6、去掉右边空格<br>SELECT RTRIM(‘    你好             ‘)<br>SELECT LEN(RTRIM(‘       你好   ‘))<br>SELECT LEN(‘管理员   ‘+’注册’)<br>SELECT LEN(RTRIM(‘管理员   ‘)+’注册’)<br>注意: SQL sever 中不能去掉中间空格和同时去掉左右空格<br>7、获取指定数目的字符串<br>SELECT LEFT(‘史蒂夫顶顶顶’,4)从左边获取<br>SELECT RIGHT(‘史蒂夫顶顶顶’,4)从右边获取<br>8、替换子串的函数<br>SELECT REPLACE(‘莫乐可切.可可’,’可可’,’宝宝’)<br>9、替换并插入函数<br>SELECT STUFF(‘12345678’,3,2,’ABCDEFG’)–数字代表从第三个子串截取两个数替换后面的字符</p>
-<p>日期函数</p>
-<p>日期函数</p>
-<p>1查询当前的系统时间<br>SELECT GETDATE() AS 系统时间<br>2日期添加<br>查询7天后的日期是几号<br>SELECT DATEADD(day,7,GETDATE()) AS ‘7天后的日期’<br>SELECT DATEADD(mm,7,GETDATE()) AS ‘7月后的日期’<br>SELECT DATEADD(yy,7,GETDATE()) AS  ‘7年后的日期’</p>
-<p>3日期减法（后面减去前面的日期）<br>SELECT DATEDIFF(day,’2018-1-26’,’2018-2-26’) AS  相差多少天<br>4指定显示日期中的某个部分<br>SELECT DATENAME(dw,GETDATE()) AS 星期<br>SELECT DATENAME(dd,GETDATE()) AS 日期<br>SELECT DATENAME(mm,GETDATE()) AS 月份<br>5日期中的整数部分<br>LECT DATEPART(DW,GETDATE()) AS 日期<br>SELECT DATEPART(dd,GETDATE()) AS 月份<br>SELECT DATEPART(yy,GETDATE()) AS 年份<br>SELECT DATEPART(ss,GETDATE()) AS 秒数</p>
-<p>数学函数</p>
-<p>数学函数：<br>1随机数函数 0~1小数<br>SELECT RAND() AS 随机数<br>随机数函数 3~6之间的数<br>SELECT RAND()<em>(6-3+1)+3 AS ‘3-6随机小数’<br>SELECT FLOOR(RAND()</em>(6-3+1)+3) AS ‘3-6随机小数’<br>2向上取值整数<br>SELECT CEILING(‘45.34’) AS 比它大的最小整数<br>3向下取值整数<br>SELECT FLOOR(‘45.32’) AS 比它小的最大整数<br>4幂值（5的3次方的值叫做 幂值 5称为底 3称为指数）<br>SELECT POWER(5,3) AS  l 5的3次幂<br>5四舍五入<br>SELECT ROUND(45.45536,2) AS 四舍五入精确精度</p>
-<p>系统函数</p>
-<p>聚合函数：<br>sum()函数   –求和<br>AVG()函数   –求平均值<br>MAX()函数   –求最大值<br>MIN()函数   –求最小值<br>COUNT()函数 –统计行数</p>
-<p>sum求和<br>SELECT SUM(score)<br>FROM dbo.成绩表</p>
-<p>avg求平均分<br>SELECT AVG(score)<br>FROM dbo.成绩表</p>
-<p>MAX最大值  MIN最小值<br>SELECT AVG(score) AS 平均分,MAX(score) AS 最大值,MIN(score) AS 最小值<br>FROM dbo.成绩表<br>where score&gt;=60</p>
-<p>COUNT 统计函数 输出查询列的行数<br>SELECT COUNT(score) AS  ‘大于80分的人数’<br>FROM dbo.成绩表<br>where score&gt;80</p>
-<p>分组查询：<br>–案例1：统计每学期的人数<br>–按照年级分组<br>SELECT 班级,COUNT(*) as 人数<br>FROM dbo.学生信息<br>GROUP BY 班级<br>–注意：select后面查询的信息有聚合函数，那么，列名要么在聚合函数中出现，要么就使用分组进行查询</p>
-<p>–案例2：查询每门课程的平均分<br>SELECT AVG(分数) as 平均分, 学科<br>from dbo.分数表<br>GROUP BY 学科</p>
-<p>–案例3：查询每门课程的平均分，并且按照分数由低到高排序<br>SELECT AVG(分数) AS 平均分,学科<br>from dbo.分数表<br>GROUP BY 学科<br>ORDER BY AVG(分数)<br>–说明：order by 排序 可以对聚合函数排序或者列名排序默认都是asc</p>
-<p>–案例4：如何获取总人数超过2人的班级？<br>SELECT COUNT(<em>) AS 人数, 班级<br>from dbo.学生信息<br>Group by 班级<br>Having COUNT(</em>) &gt;2<br>–说明：where 列名条件 Having 聚合函数条件，Having一般和GROUP BY 联用，放在GROUP BY 后面</p>
-<p>–案例5：统计平均分大于60 分的课程的平均分<br>SELECT 学科,AVG(分数)<br>FROM dbo.分数表   –从哪里开始查找<br>–WHERE 学科=1          –列名条件 模糊查询，关系表达式查询<br>GROUP BY 学科             –分组筛选<br>Having AVG(分数)&gt;50   –分组后的聚合函数筛选<br>分析下面T-SQL:</p>
-<p>分析：分类部门，显示工资超过2000的人数，并且部门人数要超过1人，不然不显示<br>分组查询是根据表中不同的组分类查询输出的<br>Having子句能够在分组的基础上，再次进行筛选<br>GROUP BY是分组，ORDER BY是排序 先分组在排序<br>在一个SQL语句中  group by, where having 使用次序：</p>
-<p>WHERE 子句从数据库中去掉不符合其搜索条件的数据；GROUP BY 子句搜索数据库行到各个组中，统计函数为各个组计算统计值；HAVING 子句去掉不符合其搜索条件的各组数据行</p>
-<p>多表连接查询</p>
-<p>内连接语句：</p>
-<p>内连接查询：<br>内连接查询是最典型。最常用的连接查询，它根据表中共同的列来进行匹配，特别是两个表存在主外键关系时通常会使用内连接查询<br>外连接查询：<br>外连接查询时至少返回一个表中的所有记录，根据匹配条件有选择性的返回另一张表的记录。外连接可以时左外连接或右外连接</p>
-<p>INNER JOIN 用来连接两个表<br>INNER 可以省略<br>ON 用来设置条件</p>
-<p>内连接查询通常不仅仅连接两个表，有时连接三个或更多<br>示例：<br>select s. sname as 学生姓名，cs.courename as 课程名称，c.score as 成绩<br>from students as s<br>inner join score as c on(s.scoder=c.studentid)<br>inner join course as cs on(cs.courseid=c.courseid)<br>案例1：使用内联接完成 查询学员姓名，科目号和分数<br>内连接写法：<br>SELECT 学生信息.studentNO,学生信息.姓名,分数表.学科,分数表.分数<br>FROM 学生信息,分数表<br>WHERE 分数表.学号=学生信息.studentNO<br>内连接写法（简便写法）：<br>SELECT S.studentNO,S.姓名,R.学科,R.分数<br>FROM 学生信息 AS S,分数表 AS R<br>WHERE R.学号=S.studentNO<br>三个语法的显示结果相同：</p>
-<p>语法格式:<br>SELECT 表2.列名1,表2.列名2,表1.列名1,表1.列名2<br>FROM 表1 as 别名 ，表2 as 别名<br>WHERE 表1.主键列=表2.外键列</p>
-<p>内连接写法2（使用 inner join）<br>SELECT S.studentNO,S.姓名,R.学科,R.分数<br>FROM 学生信息 AS S<br>inner join 分数表 AS R<br>on R.学号=S.studentNO<br>语法格式：<br>SELECT 表2.列名1,表2.列名2,表1.列名1,表1.列名2<br>FROM 表1 as 别名<br> inner join 表2 as 别名<br>on 表1.主键列=表2.外键列<br>左外连接：<br>原则：左边的表为主表，主表的信息全部显示，匹配的正常显示，不匹配的NULL值补位显示<br>查询所有学生的考试成绩和姓名，科目名<br>左外连接写法：<br>SELECT 姓名,学科,分数<br>FROM 学生信息<br>left outer join 分数表<br>on 学生信息.studentNO=分数表.学号<br>显示结果：</p>
-<p>左外连接写法2（左边从表，右边主表）：<br>SELECT 姓名,学科,分数<br>FROM 分数表<br>left outer join 学生信息<br>on 学生信息.studentNO=分数表.学号<br>显示结果：</p>
-<p>语法格式：<br>SELECT<br>FROM 主表<br>LEFT OUTER JOIN 从表<br>on 主表.通用列=从表.通用列</p>
-<p>分组查询+连接查询<br>1、分组查询是针对表中不同的组分类统计和输出的<br>2、Having子句能够在分组的基础上，再次进行筛选</p>
-<p>QQ项目</p>
-<p>1–查询qq号为88662753的用户的所有好友<br>select r.RelationQQID,NickName,Age<br>from dbo.BaseInfo as b<br>inner join dbo.Relation as r<br>on r.QQID=88662753 and r.RelationStatus=0 and r.RelationQQID=b.QQID</p>
-<p>2–查询qq号为54789625的好友中每个省份的总人数 人数从大到小排序<br>select b.Province, count(<em>) as 人数<br>from   dbo.BaseInfo as b<br>inner join dbo.Relation as r<br>on r.QQID=54789625 and r.RelationStatus=0 and r.RelationQQID=b.QQID<br>group by b.Province<br>order by  count(</em>) desc</p>
-<p>3–查询qq号为54789625的好友中等级为10级以上的好友<br>—方法1<br>select r.RelationQQID as 好友qq,b.NickName,b.Age,u.Level<br>from dbo.Relation as r<br> join dbo.BaseInfo as b<br>on r.QQID=54789625 and r.RelationStatus=0 and r.RelationQQID=b.QQID<br>join dbo.QQUser as u<br>on u.Level&gt;10 and u.QQID=r.RelationQQID<br>–方法2<br>select r.RelationQQID as 好友qq,q.Level<br>from dbo.QQUser as q<br>inner join dbo.Relation as r<br>on r.QQID=54789625 and r.RelationStatus=0 and r.RelationQQID=q.QQID and q.level&gt;10</p>
-<p>4–查询被当作黑名单人物次数排名前20的用户<br>select top 20 RelationQQID as qq号,COUNT(<em>) as 人数,NickName<br>from dbo.Relation as r<br>inner join dbo.BaseInfo as b<br>on   r.RelationQQID=b.QQID and RelationStatus=1<br>group by RelationQQID,NickName<br>order by COUNT(</em>) desc </p>
-<p>select top 20  r.RelationQQID as qq号,COUNT(<em>) as 人数<br>from dbo.Relation as r<br>inner join dbo.BaseInfo as b<br>on r.QQID=b.QQID and r.RelationStatus=1<br>group by r.RelationQQID<br>order by COUNT(</em>) desc</p>
-<p>5–查询当前用户在线信息<br>select *<br>from dbo.QQUser<br>where OnLine=0</p>
-<p>6–查询qq号码为54789625的好友中隐身的用户信息<br>select  r.RelationQQID,b.NickName,b.Sex,b.Province<br>from dbo.QQUser as q<br>inner join dbo.Relation as r<br>on r.QQID=54789625 and r.RelationStatus=0 and q.OnLine=2 and r.RelationQQID=q.QQID<br>inner join dbo.BaseInfo as b<br>on b.QQID=r.RelationQQID</p>
-<p>6–查询好友超过20的信息<br>–方法1<br>select r.QQID,COUNT(<em>) as 好友数量,b.NickName,b.Sex,b.Age,b.Province<br>from dbo.Relation  as r<br>inner join dbo.BaseInfo as b<br>on r.RelationStatus=0 and r.QQID=b.QQID<br>group by r.QQID,b.NickName,b.Sex,b.Age,b.Province<br>having  COUNT(</em>)&gt;=20<br>–方法2<br>select b.NickName, COUNT(<em>) as 人数<br>from  dbo.BaseInfo as b<br>inner join dbo.Relation as r<br>on b.QQID=r.QQID and RelationStatus=0<br>group by b.NickName<br>having  COUNT(</em>)&gt;=20</p>
-<p>7–查询北京市 年龄在18~45岁在线用户的信息，<br>select b.QQID,NickName,Sex,Age,Province,City<br>from dbo.BaseInfo  as b<br>inner join dbo.QQUser as u<br>on City=’北京’ and Age&gt;=18 and Age&lt;=45 and u.OnLine=0 and u.QQID=b.QQID</p>
-<p>8–查询昵称为‘小笨猪’的用户信息<br>select NickName,Age,Sex,Province,QQID,Phone<br>from dbo.BaseInfo<br>where NickName=’小笨猪’</p>
-<p>9–查询qq号码为 54789625的用户的好友中每个省份的总数，并且按照总人数由大到小排列<br>select Province,count(<em>)<br>from dbo.BaseInfo as b<br>inner join dbo.Relation as r<br>on b.QQID=r.RelationQQID and RelationStatus=0 and r.QQID=54789625<br>group by Province<br>order by count(</em>) desc</p>
-<p>10–查询至少300天未登录qq的用户的qq号码和最后登录时间，等级，昵称，年龄，并按照时间降序排列<br>select b.QQID,lastLogTime,Level,NickName,Age,DATEDIFF(day,lastLogTime,’2013-6-30’)  as 多少天没有登录<br>from dbo.BaseInfo as b<br>inner join dbo.QQUser as u<br>on u.QQID=b.QQID and DATEDIFF(day,lastLogTime,’2013-6-30’) &gt;300<br>order by DATEDIFF(day,lastLogTime,’2013-6-30’) </p>
-<p>今天我隐身登录，假设我的qq号码为8855678<br>update dbo.QQUser<br>set OnLine=2,lastLogTime=GETDATE()<br>where QQID=8855678<br>修改我的昵称为“被淹死的鱼”地址为“解放中路6号院106室”<br>update dbo.BaseInfo<br>set NickName=’被淹死的鱼’,Address=’解放中路6号院106室’<br>where QQID=8855678<br>将我的好友“248624066”拖进黑名单<br>update dbo.Relation<br>set RelationStatus=1<br>where QQID=8855678 and RelationQQID=248624066<br>为了提高qq用户聊天的积极性，把等级小于六级的用户等级提示一级<br>update dbo.QQUser<br>set Level=Level+1<br>where Level<6 为了奖励用户，将好友数量超过20的用户等级提升一个级别="" select="" r.qqid="" as="" qq号码,count(*)="" 人数,="" u.level="" from="" dbo.relation="" r="" inner="" join="" dbo.qquser="" u="" on="" u.qqid="r.QQID" and="" relationstatus="0" group="" by="" r.qqid,u.level="" having="" count(*)="">20<br>select * from dbo.Relation where QQID=54789625<br>把qq号码为286314的用户的好友“嘟嘟鱼”拖进黑名单<br>update dbo.Relation<br>set RelationStatus=1<br>inner join dbo.QQUser<br>where QQID=286314,<br>把qq号码为54789625的用户黑名单中的用户删除<br>delete<br>from dbo.Relation<br>where QQID=54789625 and RelationStatus=1<br>qq号码为622013019用户多次在qq中发布违法信息，在关系表删除用户622013019的信息，在基本信息表中删除该用户，还有用户表<br>delete<br>from dbo.Relation<br>where QQID=622013019<br>delete<br>from dbo.QQUser<br>where QQID=622013019<br>delete<br>from dbo.BaseInfo<br>where QQID=622013019 </6></p>
-<p>ADO.NET<br>ADO.NET的主要组件：</p>
-<p>ADO.NET结构图：</p>
-<p>.NET数据提供程序：<br>SQL Server ：使用 System.Data.SqlClient命名空间<br>ADO.NET数据提供程序的四个核心对象：<br>1 connection对象：负责连接数据库<br>2 command对象：负责对数据库执行命令<br>3 datareader对象：负责从数据源读取数据<br>4 dataSAdapter对象：负责数据集和数据库的连接<br>Connection对象的作用：<br>建立应用成语与数据库之间的连接，相当于在两者之间建立一座桥梁<br>Command对象的作用：<br>执行命令从数据库中返回结果，相当于桥梁上的运输工具</p>
-<p>不同的数据库连接相应的连接类：</p>
-<p>连接数据库步骤：</p>
-<p> 示例分析代码：</p>
-<p>使用Command步骤：<br>1、创建数据库连接<br>2、定义SQL语句<br>3、创建Command对象<br>4、打开连接对象<br>5、执行命令<br>6、关闭连接</p>
-<p>Command对象主要方法：<br>ExecuteNonQuery() 执行增、删、改(不执行查询)<br>ExecuteReader() 执行读取数据<br>ExecuteScalar()返回单个值，执行带count(*)的SQL语句<br>如何处理异常：<br>try 尝试<br>catch 抓捕；捕获</p>
-<p>String 和StringBuilder<br>String类具有很多字符串处理方法，但在替换、添加、删除字符串时，StringBuilder类对象的执行速度要快很多，<br>语法：<br>//声明一个空的StringBuilder对象<br>StringBuilder 对象名称=new Stringbuilder();<br>//声明并赋值<br>StringBuilder 对象名称=new Stringbuilder(”字符串初始值“)；<br>StringBuilder对象常用的属性和方法：</p>
-
-      
-    </div>
-    
-  </div>
-
-  <div class="article-footer">
-    <div class="article-meta pull-left">
-
-    
-
-    
-
-    </div>
-
-    
-  </div>
-  
-    
-    <h3 class="article-read"><a href="/2016/11/15/SqlServer/"><span>more</span></a></h3>
-    
-  
-</article>
-
-
-
-
-
-  <article class="article-container ">
-
-  
-    
-    <h3 class="article-title"><a href="/2015/09/17/java/"><span>JAVA</span></a></h3>
-    
-  
-
-  <div class="article-top-meta">
-    <span class="posted-on">
-      <a href="/2015/09/17/java/" rel="bookmark">
-        <time class="entry-date published" datetime="2015-09-17T03:12:19.000Z">
-          2015-09-17
-        </time>
-      </a>
-    </span>
-    <br>
-    
-  </div>
-
-
-  
-
-  <div class="article-content">
-    <div class="entry">
-      
-          <a id="more"></a>
-<p>什么是JDK：<br>JDK全称(java Development kit)java 工具开发包就是是能够实行编译和运行的功能  </p>
-<hr>
-<p>jdk中的重要文件：</p>
-<p>Jvm：java virtual machine(java虚拟机)java程序就在JVM中运行的<br>java核心类库：已经编写好的java类</p>
-<hr>
-<p>如何配置环境变量：<br> 计算机—属性—高级系统设置—环境变量。在新的打开界面中的系统变量需要设置三个属性<br> 1.“JAVA_HOME” 2.“path” 3.“classpath”,其中在没安装jdk的环境下。path属性是本来就<br> 存在的。而JAVA_HOME和classpath是不存在的。<br>步骤：<br>一、点击“新建”，然后在变量名写上JAVA_HOME，故名起义该变量的含义就是java的安装路径，点开jdk以后的路径例如（”C：\jdk1.6.0”）<br>二、其次在环境变量里面找到path，然后点击编辑新建一个变量值为javajdk中bin的路<br>三、最后在新建一个classpath，该类变量的含义是java加载类，（class or lib）路径，只有类在classpath中，<br> java命令才能识别。其值为”.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;”<br>.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;<br>方法2：<br>在eclipse中配置环境变量<br>步骤：</p>
-<h2 id="Window—-Preferences—-Java—-Installed-JREs—-Add—Next-gt-—-Directory—-选择java文件下的JDK1-7—确认—-Finish—-选择添加的路径—-OK"><a href="#Window—-Preferences—-Java—-Installed-JREs—-Add—Next-gt-—-Directory—-选择java文件下的JDK1-7—确认—-Finish—-选择添加的路径—-OK" class="headerlink" title="Window—-Preferences—-Java—-Installed JREs—-Add—Next&gt;—-Directory—-选择java文件下的JDK1.7—确认—-Finish—-选择添加的路径—-OK"></a>Window—-Preferences—-Java—-Installed JREs—-Add—Next&gt;—-Directory—-选择java文件下的JDK1.7—确认—-Finish—-选择添加的路径—-OK</h2><p>如何显示文件的后缀名：<br>打开计算机–打开工具–右击打开最后一个 文件夹选项–点击查看–寻找”隐藏已知文件类型的扩展名”</p>
-<hr>
-<p>进制转换：</p>
-<hr>
-<p>数 据 的 量：<br>1.常量：<br>在程序的云心期数据不会发生变化的量就是常量<br>整数的常量： 24小时（24进制），365天（365进制）<br>小数的常量：圆周率3.14<br>字符：’男’  ‘女’<br>布尔类型： true,false<br>空常量：null<br>2.变量：<br>基本数据类型有8中：</p>
-<p>整数类型：</p>
-<p>小数类型： </p>
-<p>小数类型所表示的数据范围要比整数的最大范围大<br>8bit=1byte<br>1024byte=1kb<br>1024kb=1mb<br>1024mb=1gb<br>1024gb=1tb<br>1024t=1pb<br>字符类型：<br>char        2字节<br>布尔类型：<br>boolean        true   false<br>boolean值的初始值是 ：false;</p>
-<hr>
-<p>操作字符串的方法：<br>length（）        //获取长度<br>quals（）        //不忽略大小写比较值<br>toLowerCase()    //转换小写<br>toUppterCase()    //转换大写<br>equalsIgnoreCase()//忽略大小写比较<br>concat()            //连接字符串<br>indexOf()            //提出字符串</p>
-<h2 id="split-拆分字符串"><a href="#split-拆分字符串" class="headerlink" title="split()            //拆分字符串"></a>split()            //拆分字符串</h2><p>数据类型转化<br>1、自动转换（整数类型的转换）<br>（小空间的数据据类型向大空间的类型去转换）<br>1、8种数据类型除了boolean类型以外都可以转换<br>2、变量在做计算的时候可能出现溢出的情况<br>3、小空间的数据类型和大空间的数据类型计算会向大空间的数据类型转换<br>4、byte、short、char在做运算的时候会自动提升数据类型成int<br>5、int和其他数值计算也会溢出，但不会提升会损失精度<br>6、任何的整数类型和long类型做运算都会转换成long类型<br>7、常量在做运算的时候只要不超出定义的数据类型的范围就不<br>8、char类型可以转换成其他类型（除了boolean）<br>会报错，也不会自动提升<br>byte    a=12;<br>byte    b=a+1;//会报错<br>int         b=a+1;//正确<br>//byte在做运算的时候会自动的提升成int<br>short   a=30;<br>short   b=a+1;//会报错<br>int         b=a+1;//正确<br>//short在做运算的时候会自动的提升成int<br>char    a=’a’;<br>int       b=a+3;//输出结果为100,a 在ascii码种代表到数字97<br>short   a=3+4;//不会报错因为系统知道不会报错（范围内）</p>
-<p>自动转换（小数类型的转换 ）<br>1、float类型和所有整数类型计算都会转换成float<br>2、double类型和任何整数类型计算都会转换成double<br>float        f=12.5f;<br>//float类型和常量计算不会有类型提升类型<br>float        f1=f+1;//结果为13.5；<br>//float类型和float类型计算不会有类型提升类型<br>float        f2=f1+f; //结果为26.0；<br>//float类型和所有整数类型计算不会提升类型<br>int         b=100;<br>float        f3=f+b //结果为112.5；<br>//double和常量计算会自动转换成double<br>double      d=120.6+1;<br>2、强制转换<br>（大空间的数据据类型向小空间的类型去转换）<br>1、把整形强制转换成byte,强制转换有可能损失精度，因为要转换的变量可能超过目标类的最大值<br>2、整数转小数，会自动转换，小数转整数会舍弃小数；<br>格式：<br>int      i=100;<br>byte  a=(byte)i;</p>
-<hr>
-<p>运算符</p>
-<p>1、算术运算符<br>(+ 、 -  、 *  、/  、%、++、–、)<br>++、–在前先进行运算再使用，++、–在后先使用再运算<br>三目：a&gt;b?true:false 说明：当a大于b的时候，为true（也就是冒号之前的值），否则为false；这整个运算符包括一个关系运算符（可以是“&gt;””&lt;””!=”等等），一个“？”，一个“：”，冒号前后需要有两个表达式或者是值或者是对象。<br>2、比较运算符<br>(== 、 ！=  、 &gt; 、&gt;=  、&lt;、&lt;=)<br>( 等于:==，不等于:!= ，大于:&gt;， 小于:&lt;，大于等于:&gt;= ，小于等于:&lt;= )<br>3、逻辑运算符<br>(&amp; 、| 、 ^ 、&amp;&amp;  、||、!)<br>4、位运算符<br>(&lt;&lt;    &gt;&gt;    &gt;&gt;&gt;    &amp;     |     ^)<br> int   a=2;<br>//把a变量的二进制的值左移2位<br>System.out.println(a &lt;&lt; 2);<br>itn b=3;<br>//把b变量向右移动2位<br>System.out.println(b &gt;&gt; 2);<br> 5、三元运算符：<br>三元运算符适合判断两个值到底使用哪一个情况<br>char  sex  6 == 6 ?  ‘男’ : ‘女‘//表达式为真返回“ : ”前面的值,假返回后面的值</p>
-<hr>
-<h2 id="switch中的条件只能是（byte-short-int-char-String）"><a href="#switch中的条件只能是（byte-short-int-char-String）" class="headerlink" title="switch中的条件只能是（byte,short,int,char,String）"></a>switch中的条件只能是（byte,short,int,char,String）</h2><p>正则表达式</p>
-<hr>
-<p>形参和实参：<br>执行方法前放进的参数叫做实参，被执行的方法的参数叫做形参<br>案例：<br> 方法中 a,b的值是实参：</p>
-<p>方法a,b的值是形参：</p>
-<hr>
-<p>引用传递和值传递：<br>值传递：<br>public class Test3 {<br>    public static void change(int a){<br>        a=50;<br>    }<br>    public static void main(String[] args) {<br>        int a=10;<br>        System.out.println(a);<br>        change(a);<br>        System.out.println(a);<br>    }<br>}<br>很显然输出的 是10，10。传递的是值得一份拷贝，这份拷贝与原来的值没什么关系。<br>对象被值传递，意味着传递了对象的一个副本。因此，就算是改变了对象副本，也不会影响源对象的值。<br>对象被引用传递，意味着传递的并不是实际的对象，而是对象的引用。因此，外部对引用对象所做的改变会反映到所有的对象上。</p>
-<hr>
-<p>方法的重载：<br>重载（overload）:在一个类中有两个或者两个以上同名的方法，但是参数不同（两个方法的参数个数不同，参数的类型不同）<br>重载的目的：提高代码的可读性<br>案例1：</p>
-<p>案例2:</p>
-<hr>
-<p>二维数组<br>二维数组就是集合中套集合<br>语法：<br>数据类型  [] [] 数组名 = new 数据类型 [2]  [3]<br>案例：</p>
-<hr>
-<p>使用二分法查找数组中对应数的索引：<br>案例1：</p>
-<p>注意：数组必须从小到大排序；</p>
-<hr>
-<p>局部变量和成员变量的区别<br>局部变量：<br>1、在方法中或者在语句块中<br>2、局部变量不许赋值才能使用<br>3、都存储在栈中<br>4、生命周期：定义的时候产生，当前方法执行完消失<br>5、static不能修饰局部变量<br>成员变量：<br>1、在类里面定义<br>2、可以不赋值，如果不赋值会有默认值<br>3、存储在堆中<br>4、生命周期：随着对象消失而消失，会被JVM的垃圾回收器回收</p>
-<p>匿名对象：<br>（匿名对象是无意义的，因为在栈中没有一个变量对它做引用，很快就会被垃圾回收器收掉，在实际开发中要避免匿名对性）</p>
-<hr>
-<p>构造器：<br>构造器语法：<br>public  类名(数据类型  参数名，….){</p>
-<p>}<br>目的：<br>创建对象<br>构造器特点：<br>1、方法名和类名一致<br>2、方法没有返回值没有void<br>3、参数可有可无<br>注意：<br>如果类中没有带有参数的构造器，就可以使用一个隐藏的默认构造器来创建对象，如果一旦有带有参数的构造器，默认的构造器就会被覆盖。我们可以显示的定义出来默认构造器就可以使用了。通过this(实参列表)可以调用本类中的构造器，必须注意，this必须是在方法中的第一行</p>
-<hr>
-<p>Static关键字（静态）<br>解释：static在java中表示的是静态，也就是项目在初始化运行的时候就会把静态的方法、变量加载到内存中，方便参数的获取和方法的调用。<br>备注：静态变量必须在初始化之前进行赋值，否则会报错。静态方法通常都是被经常使用的方法，不需要每次都重新实例化，提高工作效率。</p>
-<p>static表示不要实例化就可以使用，static修饰的成员变量和成员方法习惯上称为静态变量和静态方法，可以直接通过类名来访问<br>1、修饰在属性上<br>定义类属性：<br>static 数据类型 变量名(用static修饰的属性永远不会改变值)<br>类属性访问：<br>类名.属性名（推荐使用）<br>对象名.类属名<br>2、修饰在方法上<br>定义类方法：（没有static的方法是对象方法）<br>public static void 方法名（数据类型  参数名..）<br>{<br>方法体<br>return   结果<br>}<br>类方法的调用 ：<br>类名.类方法名（推荐使用）<br>对象.类方法名（不建议使用）<br>在类方法中不能使用对象的属性。只能用类属性</p>
-<hr>
-<p>静态方法和非静态方法<br>实例：<br>public class Per{<br>public static String getType(){<br>return “人类”;<br>}<br>public String getName(){<br>return “张三”;<br>}<br>}<br>上面这个类中的getType方法，在没有new对象前这就可以这样用：<br>String type=Per.getType();//type=”人类”;<br>而getName方法则不能这样使用，编译都不会通过<br>getName必须这样:<br>Per p=new Per();<br>String name=p.getName();//name=”张三”;<br>当然，getType方法也可能通过对象调用:<br>String type=p.getType();//type=”人类”;<br>静态方法内部不能有非静态方法需要实例化，而非静态方法内是可以直接用静态方法的</p>
-<hr>
-<p>单 例 模 式（Singleton）<br>目的：确保一个类只有一个实例，自行实例化并向系统提供这个实例<br>1、单例模式的创建步骤：<br>（1）将默认啊的构造器私有化<br>（2）在类中定义一个当前类的类型的静态属性，便且创建该当前类的对象<br>（3）提供一个静态的类方法来返回当前类的静态属性的对象<br>懒汉模式：</p>
-<p>饿汉模式：</p>
-<hr>
-<p>继承<br>继承的特点：<br>1、如果父类中包含了某些类中的共同的属性和性为，我们可以使用继承来设计程序。<br>2、子类使用extends关键字继承父类的共同属性以外，子类还可以有自己特有的属性或者方法。<br>3、父类更通用，子类更具体<br>4、子类只能获得父类中的非private的属性，如果想要继承就得提供公共的set和get的方法，私有的方法是无法继承下来的<br>5、java中只能做单继承<br>6、提高代码的可读性</p>
-<hr>
-<p>Super关键子<br>1、子类实例化的过程中父类的构造器用先被调，然后再调用子类的构造器<br>2、子类被调用的时候父类的默认构造器就会被调用(父类如果存在着有参数的构造器，一定要把默认构造器显示的定义出来)<br>3、super()的调用必须要放在方法的第一行<br>4、 子类在调用父类的有参数的构造器的时候使用，super(参数列表)这时父类的默认构造器就不会被调用了<br>5、super可以表示父类的引用，我们可以使用super和this来区别父类和子类中同名的属性，在这种子类中访问属性的查找顺序首先在子类中查找指定的属性名字，如果在子类中没有该属性，那么就去父类中查找该属性，方法也是一样的当子类和父类有同样的方法时通过子类调用这个相同的为方法时调用的是子类的方法，但是我们可以通过super对父类的引用来调用父类的方法。</p>
-<hr>
-<p>this关键子<br>1、代表当前类的指定实例的引用<br>2、可以区分同名的属性和局部变量<br>3、通过this可以调用同类中的构造器（this（）,this(参数列表)）<br>4、调用本类里面的属性，this.属性名，this.方法名（）</p>
-<hr>
-<p> 抽象类<br>抽象语法:<br>public  abtract    返回值类型或【void】  方法名（参数列表）；没有方法体<br>//如果在一个类中存在一个方法，那么这个类一定是抽象类，这个类上也要有abstract标识<br>抽象类的语法：<br>abstract  class  类名{<br>属性<br>方法<br>}<br>注意：抽象类中可以没有抽象方法，但是有抽象方法的类一定是抽象类；<br>抽象方法的概念：<br>当多个具体的实体类存在着共同的行为，但是有不同的表现，我们在父类继承过程中父类的方法具体实现不能确定，但是可能确定的是他们都有这种行为。<br>我们要把这种行为方法作为抽象方法<br>抽象类的特点：<br>1、抽象类不能被实例化<br>2、抽象类必须被子类继承才能使用子类实例化<br>3、继承了抽象类的非抽象类必须实现抽象类的所有抽象方法<br>4、抽象类也可以继承抽象类，这样不需要实现父抽象类的方法<br>5、抽象类的抽象方法不能和private，final, static共存。<br>实例：<br>抽象类：</p>
-<p>继承抽象类：<br>如果一个子类继承了抽象类的方法，那么就一定要实现抽象类中的抽象方法</p>
-<p>main方法：</p>
-<hr>
-<p> 接口<br>什么是接口：当一个抽象类，如果抽象类中的所有方法都是抽象的，那么我们就可以把它定义为一个接口，接口是对行为的抽象，类是对属性和行为的抽象<br>语法：<br>interface         接口名{<br>方法的定义；<br>……<br>}<br>接口的特点：<br>1、在接口中每一个方法的定义都是抽象的，可以省略abstract<br>2、接口是不可以实例化的，需要有类来实现接口实现接口的语法：<br>class    类名    implements    接口名，接口名…{<br>//必须实现每一个接口中的每一个方法<br>}<br>3、接口中的方法不能和private，static和final共存<br>4、在接口中可以定义属性，可以通过接口的实现类的实例来访问，还可以通过接口名来访问（推荐使用），接口中的属性不能修改，我们接口中的属性都是默认final static的，通过在接口中来定义属性把它作为常量，常量的名字规范是单词大写，而且多个单词之间用下划线来分割。比如：FLILE_PAT<br>5、接口可以继承接口<br>案例：</p>
-<p>输出结果：</p>
-<p>接口继承接口</p>
-<p>练习题：（使用接口求圆的周长和面积）<br>main方法：</p>
-<p>接口和类：</p>
-<p>数值类型转换有两种：<br>double转int强制转换和int转double自动转换；<br>=和==的区别：<br>“=”是把右边的表达式赋给左边的变量名，“==”是将左右的存储地址进行比较成立为true不成立为false<br>==和 equals的区别：<br>“==”比较的是路径新建的String i=new String(“ff”)和String z=new String(“ff”)计较每个路径都是新建立的所以结果为false。String i=”ff”和String z=”ff”比较可以用”==”因为他们的值放在池里经过的路径一样没有新建一个路径所以路径用的是一样的结果为true。<br>“.equals”比较的是值，只要值相等结果就为true<br>bread和continue的异同点：<br>break和continue都是控制循环结构的，主要是停止循环。<br>break：<br>有时候我们想在某种条件出现的时候终止循环而不是等到循环条件为false才终止。这时我们可以使用break来完成。break用于完全结束一个循环，跳出循环体执行循环后面的语句。<br>continue：<br>continue和break有点类似，区别在于continue只是终止本次循环，接着执行后面的循环，break则完全终止循环。可以理解为continue是跳过当前循环中剩下的语句，执行下一次循环。<br>for循环执行顺序：<br>1.执行初始化<br>2.执行条件判断<br>3.根据循环结构判断条件为true继续执行，为假false退出循环不再执行<br>4.执行迭失部分（i++）依次执行3、4步骤直到条件不成立退出<br>字符串方法<br>使用String对象存储字符串：<br>String s=”Hello World”;   //存储在栈中<br>String s=new String();     //存储在堆中<br>String s=new String(“Hello World”);      //存储在堆中<br>String类位于java.lang包中，具有丰富的方法：<br>   计算字符串的长度、比较字符串、连接字符串、提取字符串<br>String类提供的equals()方法，比较存储在两个字符串对象的内容是否一致<br>“==”和equals()有什么区别？<br>1、==是判断两个变量或实例是不是指向同一个内存空间<br>equals是判断两个变量或实例所指向的内存空间的值是不是相同<br>2、==是对内存地址进行比较<br>equals（）是对字符串的内容进行比较<br>3、==指引用是否相同<br>equals()指的是值是否相同</p>
-<p>百文百鸡：<br>小鸡一文三只，公鸡5文一只，母鸡3文一只，100文怎么买100只鸡：<br>利用二重循环实现用整形变量g和m分别表示要买的公鸡和母鸡数，则g不会超过20，m不会超过33。<br>用整形变量k（3的倍数）表示小鸡数，一共100文钱，则可以得到：5<em>g+3</em>m+x/3=100<br>一共买了100只鸡，则有：g+m+x=100</p>
-<p>显示结果：</p>
-<p>鸡兔同笼：<br>上有35头下有94足求个数<br>假设 j为鸡 t为兔<br>j+t=35;<br>j<em>2+t</em>4=94;<br>显示结果：</p>
-<p>等腰三角形：</p>
-<p>输出结果：</p>
-<p>数组：<br>数组就是一个变量用于将相同的数据类型的数据存储在内存中，数组中的每一个数据元素都属于同一数据类型。<br>数组的基本要素：<br>标识符：首先，和变量一样，在计算机中，数组也要有一个名称，称为标识符，用于区分不同数组。<br>数组元素：当给出了数组名称，即数组标识符后，要向数组中存放数据。这些数据就称为数组元素。<br>数组下标：在数组中，为了正确地得到数组元素的元素，需要对它们进行编号，这样计算机才能根据编号去存取，这个编号就称为数组下标。<br>声明数组2种方式：<br>int[] scores1;//推荐<br>int scores2[];<br>数组开空间方式:<br>scores2=new int[5];//长度必须写<br>赋值3种方法:<br>方法1：索引号逐一赋值<br>scores1[0]=90;<br>scores1[1]=100;<br>scores1[2]=99;<br>……<br>scores1[scores1.length-1]=77;<br>方法2：边开空间便赋值<br>int[] score3=new int[]{1,5,6,8,11,23};<br>方式3：边声明边赋值<br>int[] scores4={45,34,23};<br>数组排序：<br>使用 Arrays.sort() 方法将数组名放到括号里<br>九九乘法表：</p>
-<p>菱形：</p>
-<p>练习题：<br>1、定义四个变量，a=’A’;b=’B’,c=’C’,d=’D’;现在编程实现a与d变量中的值交换，b与c中的值交换。最后输出a、b、c、d中的值</p>
-<p>2、老师说小明考试达到90分以上则奖励一个优盘,80分以上奖励一个java疯狂讲义,70分以上奖励一个本子否则什么都不奖励,还要罚写抄书50遍。</p>
-<p>3、从键盘上输入一个5位数,把每位上的数相加,求和。<br>方法1：</p>
-<p>方法2：</p>
-<p>4.已知数组中有值{1,3,5,9},实现从键盘随意输入一个数插入到数组中,顺序有低到高排列</p>
-<p>5、输出1-100偶数的个数和奇数的个数各有多少</p>
-<p>6、输入一串字符查找某一个字出现的次数</p>
-<p>如何创建字符串：<br>String s=”Hello world”;//创建一个”Hello world”字符串<br>String s=new String();//创建一个空的字符串<br>String s=new String(“Hello world”);//创建一个”Hello world”字符串<br>忽略大小写比较：<br>String s=”tom”;<br>s.equalslgnoreCase(“TOM”);//运算结果为true;<br>操作字符串的方法：<br>replace()            //前后两个参数用于替换<br>length（）        //获取长度<br>quals（）        //不忽略大小写比较值<br>toLowerCase()    //转换小写<br>toUppterCase()    //转换大写<br>equalsIgnoreCase()//忽略大小写比较<br>concat()            //连接字符串<br>indexOf()            //提出字符串<br>split()            //拆分字符串<br>字符串方法：<br>String s=”青春无悔”;<br>int index=s.indexOf(“春”);<br>输出结果为“1”下标从0开始，查找字符串串下标的位置，“春”为下标1<br>String s=”青春无悔无悔青春”;<br>int index=s.lastIndexOf(“青春”);<br>输出结果为“6”下标从0开始，查找最后一次出现的字符返回“青春”的首字符位置<br>String s=”青春无悔无悔青春”;<br>String s=”青春无悔无悔青春”;<br>String result=s.substring(1,4);<br>输出结果为“春无悔”括号里前面写下标从0开始找开始位置，后面写结束的下标位置从1开始，<br>String s=”青春无悔无悔青春”;<br>String[] ss=s.split(“”);<br>括号里面必须写””号，””填要拆分的字符，不填写就拆分成子字符<br>String s=”hello,world”;<br>String str=s.replace(“,”,” “);//替换<br>把s中的“，”替换为空格<br>常用的StringBuffer类提供的方法：<br>转换成String类型 ：ToString();<br>连接字符串：    append();<br>插入字符串：   insert(索引，”字符“);<br>随机数<br>1–10公式:<br>(int)(1+math.random()<em>(10-1+1))<br>Java随机数指定位置公式：<br>(数据类型)(最小值+Math.random()</em>(最大值-最小值+1))<br>int b=(int)(100+Math.random()*(999-100+1));<br>C#随机数：<br>Random random = new Random();<br>int num = random.Next(最小值, 最大值);</p>
-<hr>
-<p>对象和封装<br>查看类图：</p>
-<p>类名首字母大写<br>属性名和方法名首字母小写</p>
-<h2 id="常量名全部大写单词中间用“-”分割"><a href="#常量名全部大写单词中间用“-”分割" class="headerlink" title="常量名全部大写单词中间用“_”分割"></a>常量名全部大写单词中间用“_”分割</h2><p>构造方法：<br>方法名与类名相同<br>方法没有返回值<br>主要完成对象的初始化工作</p>
-<h2 id="this-表示当前类的无惨构造方法，自能在构造方法中使用，而且必须时第一行"><a href="#this-表示当前类的无惨构造方法，自能在构造方法中使用，而且必须时第一行" class="headerlink" title="this()表示当前类的无惨构造方法，自能在构造方法中使用，而且必须时第一行"></a>this()表示当前类的无惨构造方法，自能在构造方法中使用，而且必须时第一行</h2><p>方法的重载：<br>在一个类中有两个或者两个以上同名的方法，但是参数不同（两个方法的参数个数不同，参数的类型不同）</p>
-<h2 id="重载的目的：提高代码的可读性，复用性"><a href="#重载的目的：提高代码的可读性，复用性" class="headerlink" title="重载的目的：提高代码的可读性，复用性"></a>重载的目的：提高代码的可读性，复用性</h2><p>值类型和引用类型<br>1、值类型<br>（struct、float、bool、enum、int 、double……）<br>改变一个变量的值不会影响另一个变量的值<br>2、引用类型<br>(delegate、class、interface、object、string.数组…..)<br>string 是一个特殊的引用类型，传递参数不会保留值</p>
-<h2 id="改变其中一个数组的值另一个数组改变（指向同一个存储空间所以共用的是一个数组）"><a href="#改变其中一个数组的值另一个数组改变（指向同一个存储空间所以共用的是一个数组）" class="headerlink" title="改变其中一个数组的值另一个数组改变（指向同一个存储空间所以共用的是一个数组）"></a>改变其中一个数组的值另一个数组改变（指向同一个存储空间所以共用的是一个数组）</h2><p>2、再C#中静态属性不能通过对象名 . 调用，只能通过类名 . 掉用。再Java中两个都可以<br>静态代码块只能给static的属性赋值,比构造方法先执行一步<br>案例：<br>static{<br>name=”朱熔政”;<br>System.out.println(“我是代码块”);</p>
-<h2 id=""><a href="#" class="headerlink" title="} "></a>} </h2><p>封装<br>封装快捷键：<br>右击空白区域选择Source→Generate Getter and Setter→Select All→OK<br>1、将类的某些信息隐藏在类内部，不允许外部程序直接访问，而是通过该类提供的方法来实现对隐藏信息的操作和访问<br>封装的好处：<br>1、隐藏类的实现细节<br>2、只能通过规定方法访问数据<br>3、方便加入控制语句<br>4、方便修改实现<br>实现方法：</p>
-<h2 id="1、修改属性为Private→2、创建公有的getter-setter方法→3、对属性值的合法性进行判断"><a href="#1、修改属性为Private→2、创建公有的getter-setter方法→3、对属性值的合法性进行判断" class="headerlink" title="1、修改属性为Private→2、创建公有的getter/setter方法→3、对属性值的合法性进行判断"></a>1、修改属性为Private→2、创建公有的getter/setter方法→3、对属性值的合法性进行判断</h2><p>Static关键字（静态）<br>1、static不能修饰局部变量<br>2、static关键字所修饰的是类的成员，而非实例成员<br>3、static修饰的属性会长期占用内存<br>3、静态类中不能出现 this和super关键字<br>6、加载类的过程中，完成静态变量的内存分配，在执行静态块，两者实在创建对象之前完成的</p>
-<h2 id="7、普通类是不允许声明为静态的，只有内部类才可以。"><a href="#7、普通类是不允许声明为静态的，只有内部类才可以。" class="headerlink" title="7、普通类是不允许声明为静态的，只有内部类才可以。"></a>7、普通类是不允许声明为静态的，只有内部类才可以。</h2><p>Java对象的初始化顺序</p>
-<h2 id="重点：静态方法先被加载，普通方法调用的时候才加载"><a href="#重点：静态方法先被加载，普通方法调用的时候才加载" class="headerlink" title="重点：静态方法先被加载，普通方法调用的时候才加载"></a>重点：静态方法先被加载，普通方法调用的时候才加载</h2><p>继承的概念<br>继承<br>extends 继承关键字（翻译：扩展）<br>1、如果父类中包含了某些类中的共同的属性和性为，我们可以使用继承来设计程序。<br>2、子类使用extends关键字继承父类的共同属性以外，子类还可以有自己特有的属性或者方法。<br>3、父类更通用，子类更具体<br>4、子类只能获得父类中的非private的属性，如果想要继承就得提供公共的set和get的方法，私有的方法是无法继承下来的<br>5、java中只能做单继承<br>6、子类不能继承父类的构造方法可以引用<br>7、Object类是所有类的祖先，再定义一个类时这个类就继承了Object</p>
-<h2 id="Object类的六个方法：1、equals（），2、getClass-，3、hashCode-，4、notify-5、notifyAll-，6、toString"><a href="#Object类的六个方法：1、equals（），2、getClass-，3、hashCode-，4、notify-5、notifyAll-，6、toString" class="headerlink" title="Object类的六个方法：1、equals（），2、getClass()，3、hashCode()，4、notify(),5、notifyAll()，6、toString()"></a>Object类的六个方法：1、equals（），2、getClass()，3、hashCode()，4、notify(),5、notifyAll()，6、toString()</h2><p>super关键字<br>1、super()的调用构造方法必须要放在方法的第一行<br>2、super可以表示父类的引用，我们可以使用super和this来区别父类和子类中同名的属性</p>
-<h2 id="3、super出现在子类的方法和构造方法中，而不是其他地方"><a href="#3、super出现在子类的方法和构造方法中，而不是其他地方" class="headerlink" title="3、super出现在子类的方法和构造方法中，而不是其他地方"></a>3、super出现在子类的方法和构造方法中，而不是其他地方</h2><p>抽象类(abstract)<br>抽象语法:<br>抽象方法的语法：<br>public  abtract    返回值类型  方法名（参数列表）；//没有方法体<br>如果在一个类中存在一个抽象方法，那么这个类一定是抽象类<br>抽象类的语法：<br>abstract  class  类名{<br>属性<br>方法<br>}<br>注意：抽象类中可以没有抽象方法，但是有抽象方法的类一定是抽象类；<br>抽象方法的概念：<br>当多个具体的实体类存在着共同的行为，但是有不同的表现，我们在父类继承过程中父类的方法具体实现不能确定，但是可能确定的是他们都有这种行为。<br>我们要把这种行为方法作为抽象方法<br>抽象类的特点：<br>1、抽象类不能被实例化<br>2、抽象类必须被子类继承才能使用子类实例化<br>3、继承了抽象类的非抽象类必须实现抽象类的所有抽象方法<br>4、抽象类也可以继承抽象类，这样不需要实现父抽象类的方法<br>5、抽象类的抽象方法不能和private，final, static共存。<br>7、abstract可以用来修饰方法和类，但不能修饰属性和构造函数</p>
-<h2 id="8、抽象类中的构造方法可以正常使用"><a href="#8、抽象类中的构造方法可以正常使用" class="headerlink" title="8、抽象类中的构造方法可以正常使用"></a>8、抽象类中的构造方法可以正常使用</h2><p>重写（override）<br>1、子类重写父类方法，方法的返回值，方法名，方法参数要和被重写的方法完全相同</p>
-<h2 id="2、方法重写不能缩小被重写方法的访问权限"><a href="#2、方法重写不能缩小被重写方法的访问权限" class="headerlink" title="2、方法重写不能缩小被重写方法的访问权限"></a>2、方法重写不能缩小被重写方法的访问权限</h2><p>final关键字（最终的）<br>1、final关键字修饰的变量叫常量（不会改变的值）常量的变量名全部大写<br>2、final修饰的类不能继承<br>3、final修饰的属性不能被修改<br>4、final修饰的方法不能被子类重写<br>5、final修饰引用型不能再引用<br>6、final和abstract是功能相反的两个关键字</p>
-<h2 id="7、final可以用来修饰类，属性，方法，不能修饰构造函数"><a href="#7、final可以用来修饰类，属性，方法，不能修饰构造函数" class="headerlink" title="7、final可以用来修饰类，属性，方法，不能修饰构造函数"></a>7、final可以用来修饰类，属性，方法，不能修饰构造函数</h2><p>多态<br>没有继承就没有多态<br>1、将一个父类的引用指向一个子类对象，称为向上转型，自动进行类型转换<br>2、此时通过父类引用变量调用的方法是子类覆盖父类或继承父类的方法，不是父类的方法<br>3、此时通过父类引用变量无法调用子类特有的方法<br>4、但是可以将父类的这个引用变量通过强制类型转换为子类对象<br>案例：<br>Pet pet=new Dog(“欧拉”,”哈士奇”)；//类型的自动转换<br>pet.eat()；    //父类有的方法才可以调用出来<br>pet.catching()    //子类的方法父类的引用对象调用不出啦会报错<br>Dog dog=(Dog)pet;    //强制类型转换为狗狗类<br>dog.catching()；    //这样就不会报错了<br>Penguin pen=(pen)pet;//会保存因为这个引用变量指向的是狗狗类，不能转化为其他类<br>instanceof 运算符<br>用来进行类型判断；<br>1、使用instanceof判断类型时，两个判断的变量要有子父类关系<br>2、instanceof通常和强制类型转换一起使用<br>向上转型——子类转换为父类（自动转换）</p>
-<h2 id="向下转型——父类转换为子类（结合instanceof强制转换）"><a href="#向下转型——父类转换为子类（结合instanceof强制转换）" class="headerlink" title="向下转型——父类转换为子类（结合instanceof强制转换）"></a>向下转型——父类转换为子类（结合instanceof强制转换）</h2><p>接口<br>interface<br>语法：<br>定义接口：<br>interface         接口名{<br>方法的定义；<br>……<br>}<br>接口继承接口：<br> public interface 接口名 extends 父接口1，父接口2，….{<br>//常量定义<br>//抽象方法定义<br>}<br>implements<br>继承实现接口：<br>class 类名 extends 父类名 implements 接口1，接口2，….{<br>//类成员<br>//必须实现每一个接口中的每一个方法<br>}<br>1、接口中的属性都是静态全局常量，都会用public static final修饰，接口中的常量必须在定义时指定初始值<br>2、接口中所有方法都是抽象方法，接口中的方法都会自动用public abstract修饰，既接口中自有全局抽象方法<br>3、接口不能实例化，接口中不能有构造方法<br>4、接口中可以通过extends实现继承关系，一个接口中可以继承多个接口，但接口不能继承类<br>5、接口的实现类，必须实现接口的全部方法，否则必须定义为抽象类<br>6、通过implements实现多个接口，extends必须在前<br>7、接口的属性和方法不能私有化<br>接口和抽象类的共有特点：<br>1、都不能实例化</p>
-<h2 id="2、不能和private，static和final共存"><a href="#2、不能和private，static和final共存" class="headerlink" title="2、不能和private，static和final共存"></a>2、不能和private，static和final共存</h2><p>异常<br>异常是指在程序的运行过程中所发生的不正常的事件，它会中断正常的程序<br>快捷键：Shift+Alt+Z<br>1、如果try语句块在执行过程中遇到异常，并且这个异常与catch中声明的异常类型匹配，那么在try块中剩余的代码将被忽略，但如果catch中没有声明的异常，那么将立刻退出程序<br>2、无论异常有没有被catch块捕获，都会执行finally，有return的话也会先执行finally<br>3、System.exit(1)  表示退出程序<br>异常处理关键字：<br>捕获异常：<br>try:执行可能产生异常的代码（此处不会产生异常）<br>catch:捕获异常<br>finally:无论是否发生异常代码都执行,只有一种情况不走finally      System.exit(1) //退出java虚拟机<br>抛出异常：<br>throw：手动抛出异常<br>声明异常：</p>
-<h2 id="throws：声明方法可能抛出的各种异常"><a href="#throws：声明方法可能抛出的各种异常" class="headerlink" title="throws：声明方法可能抛出的各种异常"></a>throws：声明方法可能抛出的各种异常</h2><p>异常中的方法：<br>1、获得异常信息：<br>e.getMessage()<br>2、获得异常的内存堆栈信息及错误的位置</p>
-<h2 id="e-printStackTrace"><a href="#e-printStackTrace" class="headerlink" title="e.printStackTrace()"></a>e.printStackTrace()</h2><p>多重catch块<br>执行其中的一条catch语句后，其后的catch语句都将被忽略，排列的顺序必须从子类到父类，最后一个一般都是Exception类<br>案例：</p>
-<hr>
-<p>throws声明异常<br>声明某个方法可能抛出的各种异常，throws可以同时声明多个异常，之间用逗号隔开，通过try-catch捕获并处理异常<br>案例：</p>
-<hr>
-<p>throw手动抛出异常<br>案例：</p>
-<p>测试类：</p>
-<hr>
-<p>异常分类：<br>Throwable类：所有异常类的父类，派生两个子类Error和Exception<br>Error类：表示仅靠程序本身无法恢复的严重错误，例如虚拟机的错误，内存溢出等<br>Exception类：由java应用程序抛出和处理的严重错误，如所需文件找不到，网络中断，除数不能为0，数组下标越界等<br>RintimeException类：运行时异常</p>
-<hr>
-<p>常见的异常类型：</p>
-<h2 id="InputMismatchException-赋值错误内容不匹配"><a href="#InputMismatchException-赋值错误内容不匹配" class="headerlink" title=" | InputMismatchException                       |   赋值错误内容不匹配                    |    "></a> | InputMismatchException                       |   赋值错误内容不匹配                    |    </h2><p>Scanner中的 .hasNextInt()方法返回一个布尔值，判断两次输入的数是否都为整数是的话返回 true，非整数返回fase;</p>
-<h2 id="System-err-println-“”-也是输出语句-只不过输出的字体是红色的"><a href="#System-err-println-“”-也是输出语句-只不过输出的字体是红色的" class="headerlink" title="System.err.println(“”),也是输出语句.只不过输出的字体是红色的"></a>System.err.println(“”),也是输出语句.只不过输出的字体是红色的</h2><p>throw和throws的区别表现在以下三个方面<br>1、作用不同：throw用于在程序中抛出异常；throws用于声明在该方法内抛出了异常<br>2、使用的位置不同：throw位于方法体内部，可以作为单独语句使用；throws必须跟在方法参数列表的后面，不能单独使用</p>
-<h2 id="3、内容不同：throw抛出一个异常对象，而且只能是一个；throws后面跟异常类，而且可以跟多个异常类"><a href="#3、内容不同：throw抛出一个异常对象，而且只能是一个；throws后面跟异常类，而且可以跟多个异常类" class="headerlink" title="3、内容不同：throw抛出一个异常对象，而且只能是一个；throws后面跟异常类，而且可以跟多个异常类"></a>3、内容不同：throw抛出一个异常对象，而且只能是一个；throws后面跟异常类，而且可以跟多个异常类</h2><p>Log4j<br>主要用来记录系统中一些重要操作，便于监视系统运行情况，帮助用户提前发现和避开肯出现的问题，或者出现问题后根据日志找到原因<br>日志级别:<br>fatal &gt; error &gt; warn &gt; info &gt; debug</p>
-<p>实现步骤：<br>1、在项目中加入log4j所用的JAR文件<br>2、创建log4j.properties文件<br>3、编写log4j.properties文件，配置日志信息<br>4、在程序中使用log4j记录日志信息</p>
-<hr>
-<p>集合框架<br> 位于java.util包中</p>
-<p>Collection接口：<br>LIst接口继承Collection存储不唯一，有序（插入顺序）的对象<br>1、ArrayList：存储方式和数组相同,优点：遍历元素和随机访问元素效率高；<br>2、LinkedList：优点：插入、删除元素效率高；提供了额外的addFirst（）、addLast()、removeFirst()、removeLast()、getLast()、getFirst()等方法<br>Set接口继承Collection存储一组唯一，无序的对象<br>Map接口：(存储成对的键、值对象)<br>1、HashMap:即一个键对象和一个值对象，可以根据键实现对应值的映射<br>ArrayList<br>ArrayList.set(1,”df”);//修改一的位置的值为df;<br>Collections.sort(ArrayList);//对集合进行排序</p>
-<p>import java.util.List;//LIst接口包<br>import java.util.ArrayLIst；//ArrayLIst包</p>
-<hr>
-<p>LInkedList(链表集合)<br>lst.peek();//删除第一个元素</p>
-<p>import java.util.LInkedList；//包</p>
-<hr>
-<p>HashMap(键值集合)<br>import java.util.Map;//Map包<br>import java.util.HashMap;</p>
-<hr>
-<p>泛型集合（List&lt;类型&gt;）</p>
-<hr>
-<p>键值集合（HashMap&lt;类型&gt;）</p>
-<hr>
-<p>多线程<br>进程和线程<br>什么是多线程？<br>1、如果在一个线程中同时运行了多个线程，用来完成不同的工作，则称为“多线程”；2、多个线程交替占用CPU资源，而非真正的并行执行<br>进程:一个应用程序就是一个进程，进程只是一个概念<br>线程:线程是进程的一部分，至少有一个线程这个线程被称为主线程<br>多线程好处：<br>1、充分利用CPU的资源2、简化编程模型3、带来良好的用户体验<br>Thread类<br>java.lang.Thread类中持多线程编程<br>主线程<br>main（）方法即为主线程入口，1、产生其他子线程的线程2、必须最后完成执行，因为它执行各种关闭动作<br>主线程的引用通过currentThread()方法获得（单利模式）<br>setName()改变线程名称，getName()获取线程名称<br>线程的状态：<br>创建状态、就绪状态、运行状态、杜塞状态、死亡状态<br>线程调度方法：</p>
-<p>创建线程类有两种方式：<br>方式一(继承Thread类)</p>
-<p>测试类：</p>
-<p>方式二（实现Runnable接口）</p>
-<p>测试类：</p>
-<hr>
-<p>setName() 获取和设置线程名：</p>
-<hr>
-<p>setPriority() 设置线程优先级：<br>（0~9数字越大优先的几率越高，不能保证一定优先）</p>
-<hr>
-<p>sleep() 设置线程休眠：<br>（以毫秒为单位）</p>
-<hr>
-<p>join() 强制执行<br>(哪个对象 . join()哪个强制执行)</p>
-<hr>
-<p>yield() 设置线程礼让：<br>(提供一种可能性，不能保证一定礼让，礼让的线程处于就绪状态）</p>
-<hr>
-<p>线程不安全问题：<br>多个线程操作同一共享资源时，将引发数据不安全问题<br>案例：</p>
-<p>运行结果：</p>
-<p>synchronized 解决线程不安全问题：<br>方法一（同步方法）<br>方法二（关键字修饰代码块）<br>1、同一时刻只能有一个线程进入synchronized(this)同步代码块<br>2、当一个线程访问一个synchronized(this)同步代码块时，其他synchronized(this)同步代码块同样被锁定</p>
-<h2 id="3、当一个线程访问一个synchronized-this-同步代码块时，其他线程可以访问该资源的非synchronized-this-同步代码"><a href="#3、当一个线程访问一个synchronized-this-同步代码块时，其他线程可以访问该资源的非synchronized-this-同步代码" class="headerlink" title="3、当一个线程访问一个synchronized(this)同步代码块时，其他线程可以访问该资源的非synchronized(this)同步代码"></a>3、当一个线程访问一个synchronized(this)同步代码块时，其他线程可以访问该资源的非synchronized(this)同步代码</h2><p>多线程中使用vector集合，单线程中使用ArrayList<br>不带锁的方法称为非同步方法，例如ArrayList类的add()<br>vector集合是安全的<br>Hashtable和HashMap的区别<br>Hashtable线程安全，HashMap线程不安全，效率低<br>Hashtable的键和值都不能为空，HashMap键和值都可以为空，效率高</p>
-<hr>
-<p>文件操作<br>import  java.io.File<br>File类的常用方法</p>
-<p>1、文件可认为是相关记录或放在一起的数据集合<br>2、文件存储在，磁盘，光驱….中<br>使用文件流的步骤：<br>1、引入相关的类<br>2、创建输入流/I输出流对象<br>3、读取/写入文本文件的数据<br>4、关闭相关的流对象<br>案例：</p>
-<hr>
-<p>流<br>流是指一连串流动的字符，是以先进先出的方式发送信息的通道<br>按流向区分流：<br>输入流（读）：InputStream和Reader基类<br>输出流（写）：OutputStream和Writer基类<br>按处理数据单元划分：<br>字节流：输入流InputStream基类，输出流Outputstream基类</p>
-<h2 id="字符流：输入流Reader基类，输出流Writer基类"><a href="#字符流：输入流Reader基类，输出流Writer基类" class="headerlink" title="字符流：输入流Reader基类，输出流Writer基类"></a>字符流：输入流Reader基类，输出流Writer基类</h2><p>OutputStream是所有字节流的基类<br>1、字节输入流：<br>基类：InputStream<br>子类：FileInputStream<br>构造：<br>FileInputStream(File file)<br>FileInputStream(String name)<br>方法：<br>int read()按字节读，返回读到的字节<br>read(byte[ ] b)读到字节数组，返回读入字节数组的长度<br>read(byte[ ] b,int off,int len)读到字节数组，素组的开始位置，和结束位置<br>案例：</p>
-<hr>
-<p>2、字节输出流<br>基类：outputStream<br>子类：FileOutputStream<br>构造：<br>FileOutputStream(File file)<br>FileOutputStream(String name)<br>FileOutputStream(String name,true/fase)    true代表追加<br>方法：<br>close()<br>flush()刷新缓冲区<br>write(byte[ ] b)<br>write(byte[ ] b,int off,int len)<br>write(int b)<br>案例：</p>
-<hr>
-<p>3、同时执行读写字节：（复制）</p>
-<hr>
-<p>4、字符输入流：（读）<br>1、FileReader类<br>基类：Reader<br>构造：<br>FileReader(File file)<br>FileReader(String name)<br>常用方法：<br>int read()读取一个字符，返回字符编码<br>int read(char[ ] b)读取一个字符数组<br>int read(char[ ] b,int off,int len)读取一个字符数组，开始位置，和结束位置</p>
-<p>2、BufferedReader类(缓冲流)</p>
-<hr>
-<p>5、字符输出流：（写）<br>1、FileWriter类<br>基类：Reader<br>构造：<br>FileWriter(File file)<br>FileWriter(String name)<br>常用方法：<br>int write(String str)读取一个字符，返回字符编码<br>int write(char[ ] b,int off,int len)读取一个字符数组，开始位置，和结束位置<br>void flush  刷新输出流<br>案例：（读写操作）</p>
-<p>2、BufferedWriter类（缓冲流）</p>
-<hr>
-<p>分层开发<br>分包，每个包有指定功能<br>1、entity:实体层，存放实体类<br>实体类:通常只用于存储某种事物的属性和自身普通方法的类，代表某一类的具体的东西，是我们程序运行的载体<br>2、service:接口层，存放所有的接口<br>3、biz:业务层，调实现的功能，负责连接用户的<br>4、util:公共层，存储所有类共享的资源<br>5、common：工具层，存储共享的工具<br>6、dao:负责定义功能<br>7、test:测试层</p>
-
-      
-    </div>
-    
-  </div>
-
-  <div class="article-footer">
-    <div class="article-meta pull-left">
-
-    
-
-    
-
-    </div>
-
-    
-  </div>
-  
-    
-    <h3 class="article-read"><a href="/2015/09/17/java/"><span>more</span></a></h3>
-    
-  
-</article>
-
-
-
-
-
-
-<nav class="pagination">
-  
-  
-</nav>
-            </main>
-            <div class="sidebar
-                    col-lg-3 col-lg-offset-0
-                    col-md-3 col-md-offset-0
-                    col-sm-12
-                    col-xs-12
-                    sidebar-container
-                ">
-
-                <div class="sidebar-container">
-
-
-
-<div class="search-container">
-<form class="site-search-form">
-    <span class="glyphicon glyphicon-search"></span><input type="text" id="local-search-input" class="st-search-input" placeholder="Search...">
-</form>
-<div id="local-search-result" class="local-search-result-cls"></div>
-</div>
-<script type="text/javascript" id="local.search.active">
-var inputArea       = document.querySelector("#local-search-input");
-inputArea.onclick   = function(){ getSearchFile(); this.onclick = null }
-inputArea.onkeydown = function(){ if(event.keyCode == 13) return false }
-</script>
-
-
-
-
-    <div class="categories-container" style="margin-top:40px;">
-        <p>归档:</p>
-            
-    </div>
-
-
-
-
-    <div class="social-container" style="margin-top:40px;">
-        <p>Links:</p>
-            
-                
-                    <li class="social-item"><i class="fa fa-fw fa-github"></i><a href="https://github.com/Boseny">GitHub</a></li>
-                
-            
-                
-                    <li class="social-item"><i class="fa fa-fw fa-weibo"></i><a href="https://weibo.com/boseny">微博</a></li>
-                
-            
-                
-                    <li class="social-item"><i class=" fa fa-fw zhihu-icon"></i><a href="https://www.zhihu.com/people/boseny">知乎</a></li>
-                
-            
-                
-                    <li class="social-item"><i class=" fa fa-fw lofter-icon"></i><a href="http://boseny.lofter.com/">Lofter</a></li>
-                
-            
-    </div>
-
-</div>
-            </div>
+        <div>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;关 于&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        </div>
+         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+          <div class="panel-body">
+            Hexo
+          </div>
+          <div class="panel-body">
+            Copyright © 2018 John Doe All Rights Reserved.
           </div>
         </div>
-        
-    <footer class="site-footer">
-  <p class="site-info">
-    Proudly powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and
-    Theme by <a href="https://github.com/BosenY/Lap" target="_blank">Lap</a>
-    <br><span id="busuanzi_container_site_uv"> 
-  本站访客数<span id="busuanzi_value_site_uv"></span>人次
-</span>
-    <br>
-    
-      
-        &copy; 2018 John Doe
-      
-    
-  </p>
-</footer>
-    
-<script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-92842840-1', 'auto');
-    ga('send', 'pageview');
-
-</script>
+      </div>
 
 
+      <hr style="margin-top:0px; margin-bottom:0px; width:80%; border-top: 1px solid #000;">
+      <hr style="margin-top:2px; margin-bottom:0px; width:80%; border-top: 3px solid #000;">
+      <div class="modal-footer">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+      </div>
+    </div>
   </div>
-
 </div>
-<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<script src="https://cdn.bootcss.com/vue/2.5.13/vue.min.js"></script>
-<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-  <script src="https://unpkg.com/draw-something/dist/draw.min.js"></script>
-  <script>
-    let maxNum = Number.parseInt('10')
-    let iconText = '❤'
-    let color = 'red'
-    new Draw({maxNum, iconText, color})
-  </script>
-
-<script src="/js/index.js"></script>
-<script src="/js/search.js"></script>
-
+  
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+  
 </body>
 </html>
